@@ -77,6 +77,7 @@ export const sideBar: SidebarConfig = [
  "/di-si-zhang-zhuo-mian-an-zhuang/di-shi-yi-jie-an-zhuang-wayland-ke-xuan.md",
 ]
 },
+{
 "text": "第五章 输入法及常用软件",
 "children": [
  "/di-wu-zhang-shu-ru-fa-ji-chang-yong-ruan-jian/di-yi-jie-fcitx-shu-ru-fa-kuang-jia.md",
@@ -178,7 +179,7 @@ export const sideBar: SidebarConfig = [
 "children": [
  "/di-shi-si-zhang-wang-luo-guan-li/di-yi-jie-ppp-bo-hao.md",
  "/di-shi-si-zhang-wang-luo-guan-li/di-er-jie-wifi.md",
- "/di-shi-si-zhang-wang-luo-guan-li/di-san-jie-usb-rn "/dis-usb-wang-luo-gong-xiang.md",
+ "/di-shi-si-zhang-wang-luo-guan-li/di-san-jie-usb-rndis-usb-wang-luo-gong-xiang.md",
  "/di-shi-si-zhang-wang-luo-guan-li/di-si-jie-lan-ya.md",
  "/di-shi-si-zhang-wang-luo-guan-li/di-wu-jie-ipv6.md",
  "/di-shi-si-zhang-wang-luo-guan-li/di-liu-jie-carp.md",
