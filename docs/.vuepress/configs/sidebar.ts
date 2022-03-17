@@ -243,7 +243,7 @@ export const sideBar: SidebarConfig = [
  "/di-shi-jiu-zhang-wen-xue-gu-shi/di-san-jie-linux-yu-ku-nan-zhe-xue.md",
  "/di-shi-jiu-zhang-wen-xue-gu-shi/di-si-jie-cong-yi-ge-xiang-fa-kan-freebsd-shi-shang-ye-hua-huan-shi-xue-yuan-pai.md",
  "/di-shi-jiu-zhang-wen-xue-gu-shi/di-wu-jie-linux-she-qu-yi-jing-cheng-wei-le-yi-ge-ang-zang-de-ni-tan.md",
- "/di-shi-jiu-zhang-wen-xue-gu-shi/di-liu-jie-linux-bai-ju-yi- "/ding.md",
+ "/di-shi-jiu-zhang-wen-xue-gu-shi/di-liu-jie-linux-bai-ju-yi-ding.md",
 ]
 },
 {
@@ -296,7 +296,7 @@ export const sideBar: SidebarConfig = [
 "children": [
  "/di-er-shi-si-zhang-freebsd-te-se/di-yi-jie-bsd-init-guan-li-fu-wu.md",
  "/di-er-shi-si-zhang-freebsd-te-se/di-er-jie-freebsd-mu-lu-jie-gou.md",
- "/di-er-shi-si-zhang-freebsd-te-se/di-san-jie-bs "/dinstall-yu-bsdconfig.md",
+ "/di-er-shi-si-zhang-freebsd-te-se/di-san-jie-bsdinstall-yu-bsdconfig.md",
  "/di-er-shi-si-zhang-freebsd-te-se/di-si-jie-jin-yong-sendmail.md",
  "/di-er-shi-si-zhang-freebsd-te-se/di-wu-jie-li-yong-jiao-ben-zi-dong-sheng-cheng-bsdlibc-ku-wen-ben.md",
  "/di-er-shi-si-zhang-freebsd-te-se/di-liu-jie-bsd-feng-ge-de-makegrepsedawk.md",
