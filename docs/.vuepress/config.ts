@@ -1,6 +1,6 @@
 /**
  * @file config.ts
- * @brief Configuration for the book.
+ * @brief Configuration of the book.
  * @copyright Copyright (c) 2022 The FreeBSD Ask Authors. All rights reserved.
  */
 
