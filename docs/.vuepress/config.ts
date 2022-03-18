@@ -4,20 +4,20 @@
  * @copyright Copyright (c) 2022 The FreeBSD Ask Authors. All rights reserved.
  */
 
-import type { DefaultThemeOptions } from 'vuepress'
-import { defineUserConfig } from 'vuepress'
-import { sideBar } from "./configs"
+import type { DefaultThemeOptions } from "vuepress";
+import { defineUserConfig } from "vuepress";
+import { sideBar } from "./configs";
 
 export default defineUserConfig<DefaultThemeOptions>({
   // site config
-  lang: 'zh-CN',
-  title: 'FreeBSD 从入门到跑路',
-  description: 'FreeBSD 从入门到跑路',
+  lang: "zh-CN",
+  title: "FreeBSD 从入门到跑路",
+  description: "FreeBSD 从入门到跑路",
 
   // theme and its config
-  theme: '@vuepress/theme-default',
+  theme: "@vuepress/theme-default",
   themeConfig: {
-    logo: 'https://vuejs.org/images/logo.png',
-    sidebar: sideBar
+    logo: "https://vuejs.org/images/logo.png",
+    sidebar: sideBar,
   },
-})
+});
