@@ -30,7 +30,7 @@ PDF 请点击“[Release](https://github.com/FreeBSD-Ask/FreeBSD-Ask/releases)�
 
 ### 开源维护与捐赠
 
-![](./.gitbook/assets/proud_donor.gif)
+![](.gitbook/assets/proud_donor.gif)
 
 [点此捐赠 FreeBSD 基金会](https://freebsdfoundation.org/donate)。
 
@@ -71,7 +71,7 @@ PDF 请点击“[Release](https://github.com/FreeBSD-Ask/FreeBSD-Ask/releases)�
 
 微信公众号: freebsdzh （扫码关注）
 
-![](./.gitbook/assets/qrcode_for_gh_3b263cc9b20b_258.jpg)
+![](.gitbook/assets/qrcode_for_gh_3b263cc9b20b_258.jpg)
 
 ## 关于
 
@@ -98,37 +98,37 @@ PDF 请点击“[Release](https://github.com/FreeBSD-Ask/FreeBSD-Ask/releases)�
 
 <https://docs.qq.com/doc/DSVhuclhqZnlyR2Na>
 
----------------------------
+--------------------------- 
 
-教程征集计划——【FreeBSD 中文社区 （CFC）2022 教程 激励计划】
+教程征集计划——【FreeBSD 中文社区 （CFC）2022 教程 激励计划】 
 
 <https://docs.qq.com/doc/DSUJsUFBHTnVWQmtS>
 
-------------------------------------------------------------
+------------------------------------------------------------ 
 
-【FreeBSD 中文社区(CFC) 2022 捐赠名单】
+【FreeBSD 中文社区(CFC) 2022 捐赠名单】 
 
 <https://docs.qq.com/doc/DSXZ1Q1JOenRzUkp4>
 
------------------------------------------------------------
+----------------------------------------------------------- 
 
-【2022 Handbook 翻译须知】
+【2022 Handbook 翻译须知】 
 
 <https://docs.qq.com/doc/DSUtxYmVwU29EdGVn>
 
----------------------------
+--------------------------- 
 
-【FreeBSD 中文社区（CFC）联络名单】
+【FreeBSD 中文社区（CFC）联络名单】 
 
 <https://docs.qq.com/doc/DSUliWGh5ZUlXTFF0>
 
----------------------------
+--------------------------- 
 
-【FreeBSD 中文社区（CFC）发展规划】
+【FreeBSD 中文社区（CFC）发展规划】 
 
 <https://docs.qq.com/doc/DSUd5Q2tYSlZWUmpj>
 
----------------------------
+--------------------------- 
 
 ## 黑名单
 
