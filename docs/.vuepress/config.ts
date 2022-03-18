@@ -1,13 +1,18 @@
-import { defineUserConfig } from 'vuepress'
-import type { DefaultThemeOptions } from 'vuepress'
+/**
+ * @file config.ts
+ * @brief Configuration for the book.
+ * @copyright Copyright (c) 2022 The FreeBSD Ask Authors. All rights reserved.
+ */
 
+import type { DefaultThemeOptions } from 'vuepress'
+import { defineUserConfig } from 'vuepress'
 import { sideBar } from "./configs"
 
 export default defineUserConfig<DefaultThemeOptions>({
   // site config
-  lang: 'en-US',
-  title: 'Hello VuePress',
-  description: 'Just playing around',
+  lang: 'zh-CN',
+  title: 'FreeBSD 从入门到跑路',
+  description: 'FreeBSD 从入门到跑路',
 
   // theme and its config
   theme: '@vuepress/theme-default',
