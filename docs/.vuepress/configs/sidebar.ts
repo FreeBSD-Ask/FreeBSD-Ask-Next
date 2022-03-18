@@ -207,7 +207,7 @@ export const sideBar: SidebarConfig = [
     "children": [
       "/di-shi-liu-zhang-fu-wu-qi/di-yi-jie-ftp-fu-wu-qi.md",
       "/di-shi-liu-zhang-fu-wu-qi/di-er-jie-dhcp-fu-wu-qi.md",
-	  "di-shi-liu-zhang-fu-wu-qi/di-san-jie-nodejs-xiang-guan.md",
+	  "/di-shi-liu-zhang-fu-wu-qi/di-san-jie-nodejs-xiang-guan.md",
       "/di-shi-liu-zhang-fu-wu-qi/di-si-jie-dns-fu-wu-qi.md",
       "/di-shi-liu-zhang-fu-wu-qi/di-wu-jie-nis-fu-wu-qi.md",
       "/di-shi-liu-zhang-fu-wu-qi/di-liu-jie-postfix-fu-wu-qi.md",
