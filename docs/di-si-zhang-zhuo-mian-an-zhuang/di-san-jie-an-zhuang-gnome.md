@@ -1,11 +1,16 @@
 # 第三节 安装 Gnome
 
-**截止到 2022-2-3，由于版本号的迁移，`Gnome` 在不同版本的 pkg 源里的存在形式也是不一样的，在 `quarterly` 中，为 `x11/gnome3`（版本 3.36），在 `latest` 中，为 `x11/gnome`（版本 41），找不到 `gnome3` 的可以试一下 `gnome`。见 <https://www.freshports.org/x11/gnome/>**
+>**注意：截止到 2022-3-21，由于版本号的迁移，`Gnome` 在不同版本的 pkg 源里的存在形式也是不一样的：在 `quarterly` 中，为 `x11/gnome3`（版本 3.36）；在 `latest` 中，为 `x11/gnome`（版本 41），见 <https://www.freshports.org/x11/gnome/>**
 
 ## 安装
 
+>**注意：以下安装二选一。如果你分不清 quarterly 和 latest 源的区别请看 第三章 第二节。这里我建议使用 latest 源，因为可以保持最新。**
+
+
+### latest 源（gnome 41）
+
 ```
-# pkg install xorg gnome3 wqy-fonts xdg-user-dirs
+# pkg install xorg gnome wqy-fonts xdg-user-dirs
 ```
 
 解释:
@@ -15,6 +20,12 @@
 |gnome3|Gnome3 主程序|
 |wqy-fonts|文泉驿中文开源字体|
 |xdg-user-dirs|用于创建用户家目录的子目录|
+
+### quarterly 源（gnome 3.36）
+
+```
+# pkg install xorg gnome3 wqy-fonts xdg-user-dirs
+```
 
 
 ## 配置
@@ -33,7 +44,6 @@ proc /proc procfs rw 0 0
 # sysrc dbus_enable="YES"
 # sysrc gdm_enable="YES"
 # sysrc gnome_enable="YES"
-# sysrc snd_hda="YES"
 ```
 
 输入以下命令：
@@ -147,7 +157,7 @@ export XMODIFIERS=@im=fcitx
 ```
 setenv LANG zh_CN.UTF-8
 setenv LC_CTYPE zh_CN.UTF-8
-setenv LC_ALL zh_CN.UTF-8`
+setenv LC_ALL zh_CN.UTF-8
 ```
 
 ## 优化系统
