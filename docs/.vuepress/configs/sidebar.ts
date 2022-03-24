@@ -16,6 +16,7 @@ export const sideBar: SidebarConfig = [
     children: [
       "/di-ling-zhang-freebsd-zhong-wen-she-qu/di-yi-jie-freebsd-faq.md",
       "/di-ling-zhang-freebsd-zhong-wen-she-qu/di-er-jie-freebsd-zhong-wen-she-qu-cfc-fa-zhan-gui-hua.md",
+      "/di-ling-zhang-freebsd-zhong-wen-she-qu/di-san-jie-freebsd-de-bu-zu-zhi-chu.md",
     ],
   },
   {
@@ -228,6 +229,7 @@ export const sideBar: SidebarConfig = [
       "/di-shi-qi-zhang-wang-luo-fu-wu-qi/di-liu-jie-typecho.md",
       "/di-shi-qi-zhang-wang-luo-fu-wu-qi/di-qi-jie-ssl-pei-zhi.md",
       "/di-shi-qi-zhang-wang-luo-fu-wu-qi/di-ba-jie-postgresql-yu-pgadmin4.md",
+      "/di-shi-liu-zhang-fu-wu-qi/di-shi-san-jie-wildfly.md",
     ],
   },
   {
