@@ -17,7 +17,7 @@ FTP 意为文件传输协议。使用 FTP 服务搭建服务器可以快速传�
 
 选中 mysql，其余保持默认选项回车即可：
 
-![](<../.gitbook/assets/在FreeBsd中安装PureFTPD（MySQL） .jpg>)
+![](<../.gitbook/assets/在FreeBsd中安装PureFTPD（MySQL）.jpg>)
 
 ```
 # make install clean
@@ -368,8 +368,8 @@ DisplayFirstChdir     .message #用户改变目录时显示信息
           RNTO 重命名
           MKD 建立目录
           RMD 删除目录
-     SITE_CHMOD 改变权限 
-    
+     SITE_CHMOD 改变权限
+
 ```
 
 #### 举例
