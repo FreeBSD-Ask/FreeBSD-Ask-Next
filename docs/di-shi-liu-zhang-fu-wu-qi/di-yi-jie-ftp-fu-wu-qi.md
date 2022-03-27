@@ -17,7 +17,7 @@ FTP 意为文件传输协议。使用 FTP 服务搭建服务器可以快速传�
 
 选中 mysql，其余保持默认选项回车即可：
 
-![](<../.gitbook/assets/在FreeBsd中安装PureFTPD（MySQL）.jpg>)
+![](<../.gitbook/assets/在FreeBsd中安装PureFTPD（MySQL） .jpg>)
 
 ```
 # make install clean
@@ -69,26 +69,23 @@ create database pureftp;
 use pureftp;
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
-`User` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
-`Password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
-`Uid` int(11) NOT NULL DEFAULT -1 COMMENT '用户ID',
-`Gid` int(11) NOT NULL DEFAULT -1 COMMENT '用户组ID',
-`Dir` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
-`quotafiles` int(255) NULL DEFAULT 500,
-`quotasize` int(255) NULL DEFAULT 30,
-`ulbandwidth` int(255) NULL DEFAULT 80,
-`dlbandwidth` int(255) NULL DEFAULT 80,
-`ipaddress` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT
-'*',
-`comment` int(255) NULL DEFAULT NULL,
-`status` tinyint(4) NULL DEFAULT 1,
-`ulratio` int(255) NULL DEFAULT 1,
-`dlratio` int(255) NULL DEFAULT 1,
-PRIMARY KEY (`User`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT =
-Dynamic;
-INSERT INTO `users` VALUES ('demo', 'demo&2022*', 2002, 2000, '/home/www/demo', 500, 30,
-80, 80, '*', NULL, NULL, 1, 1);
+   `User` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
+   `Password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
+   `Uid` int(11) NOT NULL DEFAULT -1 COMMENT '用户ID',
+   `Gid` int(11) NOT NULL DEFAULT -1 COMMENT '用户组ID',
+   `Dir` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
+   `quotafiles` int(255) NULL DEFAULT 500,
+   `quotasize` int(255) NULL DEFAULT 30,
+   `ulbandwidth` int(255) NULL DEFAULT 80,
+    `dlbandwidth` int(255) NULL DEFAULT 80,
+   `ipaddress` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT'*',
+   `comment` int(255) NULL DEFAULT NULL,
+   `status` tinyint(4) NULL DEFAULT 1,
+   `ulratio` int(255) NULL DEFAULT 1,
+   `dlratio` int(255) NULL DEFAULT 1,
+   PRIMARY KEY (`User`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+INSERT INTO `users` VALUES ('demo', 'demo&2022*', 2002, 2000, '/home/www/demo', 500, 30, 80, 80, '*', NULL, NULL, 1, 1);
 ```
 
 #### 创建登录数据库用户及设置密码
@@ -140,8 +137,7 @@ MYSQLDatabase pureftpd
 
 
 # Mandatory : how passwords are stored
-Valid values are : "cleartext", "argon2", "scrypt", "crypt", "sha1", "md5",
-assword" and "any"
+# Valid values are : "cleartext", "argon2", "scrypt", "crypt", "sha1", "md5",password" and "any"
 
 # ("password" = MySQL password() function, which is sha1(sha1(password)))
 
@@ -252,23 +248,12 @@ MYSQLGetDir SELECT Dir FROM users WHERE User='\L'
 # chgrp -R ftpgroup /home/www/
 ```
 
-### 状态操作
-
-```
-# sysrc pureftpd_enable="YES"
-# service pure-ftpd start   #启动服务器
-# service pure-ftpd stop    #停止服务
-# service pure-ftpd restart #重启服务
-```
-
-## proftpd
-
-> **警告：该教程仍在进行测试，请略过。**
+## proftpd（以 mysql 支持为例）
 
 ### 安装 proftpd
 
 ```
-# pkg install proftpd
+# pkg install proftpd proftpd-mod_sql_mysql
 ```
 
 ### 服务器操作
@@ -283,111 +268,212 @@ MYSQLGetDir SELECT Dir FROM users WHERE User='\L'
 # service proftpd restart #重启服务
 ```
 
-### 编辑配置文件
-
-设置启动：
+### 编辑配置文件 /usr/local/etc/proftpd.conf
 
 ```
-# touch /var/run/proftpd/proftpd.scoreboard
+# cat /usr/local/etc/proftpd.conf
+ServerName "Test Ftp Server"
+ServerType standalone
+DefaultServer on
+ServerIdent on "FTP Server ready"
+DeferWelcome off
+Port 21
+Umask 022
+TimeoutLogin 300
+TimeoutIdle 36000
+TimeoutNoTransfer 36000
+TimeoutStalled 36000
+TimeoutSession 0
+User proftpd
+Group proftpd
+MaxInstances 100
+MaxClientsPerHost 100
+AllowRetrieveRestart on
+AllowStoreRestart on
+AllowOverwrite on
+AllowOverride off
+RootLogin off
+IdentLookups off
+UseReverseDNS off
+DenyFilter \*.*/
+TimesGMT off
+DefaultRoot ~
+#RLimitCPU 1200 1200
+RLimitMemory 256M 256M
+RLimitOpenFiles 1024 1024
+PassivePorts 50000 60000
+LogFormat default "%h %l %u %t \"%r\" %s %b"
+LogFormat auth "%v [%P] %h %t \"%r\" %s"
+LogFormat write "%h %l %u %t \"%r\" %s %b"
+SystemLog /var/log/proftpd/proftpd.log
+TransferLog /var/log/proftpd/xfer.log
+ExtendedLog /var/log/proftpd/access.log WRITE,READ write
+ExtendedLog /var/log/proftpd/auth.log AUTH auth
+LoadModule mod_sql.c
+LoadModule mod_sql_mysql.c
+<Global>
+   SQLConnectInfo proftpd@localhost proftpd proftpd_password
+   SQLAuthTypes Crypt
+   SQLUserInfo users username password uid gid homedir NULL
+   SQLDefaultGID 2000
+   SQLDefaultUID 2000
+   RequireValidShell off
+   SQLAuthenticate users*
+   SQLLogFile /var/log/proftpd.log
+   SQLNamedQuery getcount SELECT "count, username from users where username='%u'"
+   SQLNamedQuery updatecount UPDATE "count=count+1 WHERE username='%u'" users
+   SQLShowInfo PASS "230" "You've logged on %{getcount} times, %u"
+   SQLLog PASS updatecount
+   SQLLog DELE,RETR,STOR, log_work
+   SQLNamedQuery log_work FREEFORM "\
+   INSERT INTO worklog (\
+   user_name,\
+   file_and_path,\
+   bytes,\
+   send_time,\
+   client_ip,\
+   client_name,\
+   client_command) \
+  VALUES('%u','%f','%b','%T','%a','%h','%m')"
+</Global>
 ```
 
-使用 `pw` 命令添加访问 ftp 服务器用户组：
+我们在设置中指定服务器将在主动模式下在端口 21 上工作，在被动模式下在 50000-60000 范围内工作.这些端口应该在防火墙中打开。 对于 PF，这是通过以下规则完成的：
 
 ```
-# pw groupadd -n ftp
+pass in quick on $ext_if proto tcp from any to $ext_if port { 21, 50000:60000 }
 ```
 
-给 ftp 服务器设立主目录，名字可以随便写，本文以 `youftp` 为例：
+### 创建用户
+
+出于安全目的，我们将以非 root 用户身份运行 Proftpd。 因此，我们将创建此用户：
 
 ```
-# mkdir /youftp
+# adduser
+Username: proftpd
+Full name: FTP User
+Uid (Leave empty for default):
+Login group [proftpd]:
+Login group is proftpd. Invite proftpd into other groups? []:
+Login class [default]:
+Shell (sh csh tcsh bash nologin) [sh]: nologin
+Home directory [/home/proftpd]:
+Home directory permissions (Leave empty for default):
+Use password-based authentication? [yes]: no
+Lock out the account after creation? [no]:
+Username : proftpd
+Password : <disabled>
+Full Name : FTP User
+Uid : 2000
+Class :
+Groups : proftpd
+Home : /home/proftpd
+Shell : /usr/sbin/nologin
+Locked : no
+OK? (yes/no): yes
+adduser: INFO: Successfully added (proftpd) to the user database.
+Add another user? (yes/no): no
+Goodbye!
 ```
 
-在服务器真正可用之前，我们还需要编辑服务器自身的配置文件
+现在已经创建了自己的 proftpd 用户和组 ID。 因此，在添加 ftp 用户时，您将使用它。 您可以通过以
+下方式确定 UID：
 
 ```
-# ee /usr/local/etc/proftpd.conf
+# cat /etc/passwd | grep proftpd
+proftpd:*:2000:2000:FTP User:/home/proftpd:/usr/sbin/nologin
 ```
 
-`proftpd.conf` (部分)解析如下
+### 日志相关
+
+创建一个目录来存储 FTP 服务器的日志：
 
 ```
-ServerName          "youftp" #服务器名 自行修改
-Port           21 #ftp端口
-UseIPv6         on #是否使用IPv6
-Umask           022 #掩码
-MaxInstances        30 #最大允许线程数（连接次数）
-User              nobody
-Group           nobody   #设置服务器用户及用户组
-DefaultRoot        /youftp #用户默认根目录
-AllowOverwrite        on #允许覆盖文件
-<Limit SITE_CHMOD>DenyAll</Limit> #是否允许用户改变文件权限
+# mkdir /var/log/proftpd
 ```
 
-### \<Anonymous \~ftp>部分
-
-该部分设置匿名登录。若不希望匿名登录服务器，请将此部分注释掉。
+创建一个 MySQL 数据库和一个对创建的数据库具有完全访问权限的用户:
 
 ```
-User         ftp
-Group        ftp #用户及用户组管理
-MaxClients        10 #允许匿名登录的用户最高数量
-DisplayLogin     welcome.msg #服务器欢迎信息
-DisplayFirstChdir     .message #用户改变目录时显示信息
-<Limit WRITE>DenyAll</Limit> #是否允许写入
+CREATE DATABASE `proftpd` CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
 
-### 权限设置
+创建数据库用户和密码(授权 proftpd 数据库)：
 
 ```
-<directory [PATH]> #设置[PATH]文件夹的权限
-   <limit [OPTIONS]> #限制选项
-      denygroup [GROUPNAME] #用户组
-      DenyAll #所有用户
-   </limit>
-</directory>
+grant select,insert,update,delete on proftpd.* to pftp@localhost identified by "123456";
+FLUSH PRIVILEGES;  立即生效权限
+```
+或
+```
+grant select,insert,update,delete on *.* to pftp@"localhost" Identified by "123456";
 ```
 
-#### \[OPTIONS]命令介绍:
+创建数据量：
 
 ```
-     ALL 除了 LOGIN 命令外的所有命令
-     DIRS
-          CDUP 返回上层目录
-          CWD 改变目录
-          LIST 展示目录
-          PWD 查看目录
-          STAT 显示文件状态
-          MLSD 展示信息
-     READ
-          RETR 下载文件
-          SIZE 查看大小
-     WRITE
-          APPE 上传并覆盖文件
-          STOR 上传文件
-          RNTO 重命名
-          MKD 建立目录
-          RMD 删除目录
-     SITE_CHMOD 改变权限
-
+DROP TABLE IF EXISTS users;
+CREATE TABLE `users` (
+   `username` varchar(30) NOT NULL DEFAULT '',
+   `descr` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+   `password` varchar(30) NOT NULL DEFAULT '',
+   `uid` int(11) DEFAULT NULL,
+   `gid` int(11) DEFAULT NULL,
+   `homedir` varchar(255) DEFAULT NULL,
+   `shell` varchar(255) DEFAULT NULL,
+   `count` int(11) NOT NULL DEFAULT '0',
+  UNIQUE KEY `username` (`username`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+DROP TABLE IF EXISTS worklog;
+CREATE TABLE worklog (
+   id bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+   date timestamp(0) NULL DEFAULT CURRENT_TIMESTAMP(0),
+   user_name varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+   file_and_path varchar(1024) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
+   bytes bigint(20) NULL DEFAULT NULL,
+   send_time varchar(9) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+   client_ip varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+   client_name text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
+   client_command varchar(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+   PRIMARY KEY (id) USING BTREE,
+   UNIQUE INDEX id(id) USING BTREE
+) ENGINE = MyISAM CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
 ```
 
-#### 举例
-
-阻止用户组 `students` 上传文件、重命名、删除目录 在 `/usr/local/homework` 中
+创建一个目录和一个测试 FTP 用户，将创建的目录指定为用户目录：
 
 ```
-<directory /usr/local/homework>
-   <limit APPE RNTO RMD>
-      denygroup students
-   </limit>
-   AllowOverwrite on
-   AllowRetrieveRestart on
-   AllowStoreRestart on
-</directory>
+# mkdir -p /home/www/ftp
+# chown -R proftpd:proftpd /home/www/ftp
+# mysql -u proftpd -p
+INSERT INTO `proftpd`.`users` (`username` , `descr` , `password` , `uid` , `gid` ,`homedir` , `shell` , `count` ) VALUES ('test', 'Test user', ENCRYPT('FTPpassword_here' ) , '2000', '2000', '/home/www/ftp', NULL , '0' );
+
+Query OK, 1 row affected, 1 warning (0.02 sec)
+```
+
+
+### 状态操作
+
+```
+# sysrc pureftpd_enable="YES"
+# service pure-ftpd start   #启动服务器
+# service pure-ftpd stop    #停止服务
+# service pure-ftpd restart #重启服务
 ```
 
 ## **连接到 FTP 服务器**
+
+
+简单示例：
+```
+# telnet localhost 21
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+220 FTP Server ready
+quit
+221 Goodbye.
+```
 
 使用 `ftp` 命令可以快速连接到 FTP 服务器。
 
