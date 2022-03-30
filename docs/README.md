@@ -2,11 +2,9 @@
 
 ## 概述
 
-【↓↓↓ 正文阅读请点击下方的项目预览 ↓↓↓】
-
 [项目预览——如果你认为拼音显得奇怪，那么你应该点击此处。](https://book.freebsdcn.org)
 
-PDF 请点击“[Release](https://github.com/FreeBSD-Ask/FreeBSD-Ask/releases)”下载。请注意，PDF 仅供参考，且存在这样或那样的问题，应该以在线版本为主。
+请注意，PDF 等电子书版本仅供参考，且存在这样或那样的问题，应该以在线版本为主。
 
 ### 本书定位
 
@@ -22,7 +20,7 @@ PDF 请点击“[Release](https://github.com/FreeBSD-Ask/FreeBSD-Ask/releases)�
 
 ### FreeBSD 从入门到跑路
 
-本书诞生于 2021 年 12 月 19 日。编写目的是为了促进 FreeBSD 的中国化与世界化。编写内容为 FreeBSD 的基础与高阶知识。对于章节安排，如果你有一定的计算机基础可以跳过第 〇 章，如果你对 FreeBSD 有一定认识，欢迎你加入我们一起编写本书，贡献自己的力量。
+本书诞生于 2021 年 12 月 19 日。编写目的是为了促进 FreeBSD 的中国化与世界化。编写内容为 FreeBSD 的基础与高阶知识。对于章节安排，如果你有一定的 UNIX 基础可以跳过第 一 章，如果你对 FreeBSD 有一定认识，欢迎你加入我们一起编写本书，贡献自己的力量。
 
 ### 内容提要
 
@@ -91,7 +89,7 @@ PDF 请点击“[Release](https://github.com/FreeBSD-Ask/FreeBSD-Ask/releases)�
 
 我们选择 FreeBSD，是因为想选择一个清晰、明了、可靠、稳固的一个操作系统在工作上给我们带来收益以及在生活中给我们带来乐趣。当然 FreeBSD 还存在很多问题，有待大家积极发现、探讨、完善，社会在进步，技术在进步，热情丝毫不减在持续，未来越来越美好。
 
-## 社区文档
+### 社区文档
 
 
 【FreeBSD Q&A】
@@ -130,6 +128,6 @@ PDF 请点击“[Release](https://github.com/FreeBSD-Ask/FreeBSD-Ask/releases)�
 
 --------------------------- 
 
-## 黑名单
+### 黑名单
 
-见 [CFC](https://github.com/FreeBSD-Ask/CFC)。
+见 [FreeBSD 中文社区（CFC）黑名单](https://github.com/FreeBSD-Ask/CFC)。

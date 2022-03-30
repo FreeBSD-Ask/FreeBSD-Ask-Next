@@ -8,19 +8,18 @@
 
 首先运行 `# ifconfig`，看看能不能找到你的网卡，如果能，那么你可以跳过本节了。
 
-运行 `# sysctl net.wlan.devices`，
-他可以告诉你，找到的无线网卡，如果冒号输出后边没有东西，那就是识别不了。请更换无线网卡。
+运行 `# sysctl net.wlan.devices`，他会告诉你的无线网卡驱动，如果冒号输出后边没有东西，那就是识别不了。请更换无线网卡。
 
 编辑 /boot/loader.conf 文件
 
-加入
+加入：
 
 ```
 if_urtwn_load="YES" 
 legal.realtek.license_ack=1
 ```
 
->**注意：这里只是示例，请添加自己所需的驱动。**
+>**注意：这里只是示例，请添加自己所需的驱动（看`# sysctl net.wlan.devices`的输出）。**
 
 接下来，创建 wlan0
 
@@ -28,20 +27,20 @@ legal.realtek.license_ack=1
 # ifconfig wlan0 create wlandev at0
 ```
 
-`at0` 是你的网卡，具体看自己的,该命令是临时的，若需要永久开机生效，在 `rc.conf` 中，加入
+`at0` 是你的网卡，具体看自己的`# sysctl net.wlan.devices`输出，该命令是临时的，若需要永久开机生效，在 `rc.conf` 中，加入：
 
 ```
 # wlans_ath0 ="wlan0"
 ```
 
-扫描 WiFi
+扫描 WiFi：
 
 ```
 # ifconfig wlan0 up scan
 # ifconfig wlan0 ssid abc
 ```
 
-连接 WiFi abc
+连接 WiFi ：
 
 ```
 # dhclient wlan0
@@ -170,7 +169,7 @@ wpa 验证，静态 ip
 
 >以下部分仅适用于 FreeBSD 13.1、14.0。
 >
->iwlwifi 驱动仅适用于`AC 8265、AC 9260、AC 9560、AX200、AX201、AX210`。
+>iwlwifi 驱动适用于`AC 8265、AC 9260、AC 9560、AX200、AX201、AX210` 以及旧的 iwm 驱动所包含的网卡，见 <https://www.intel.cn/content/www/cn/zh/support/articles/000005511/wireless.html>。iwm(4) 的原有网卡若想使用该驱动，请参考 <https://wiki.freebsd.org/WiFi/Iwlwifi#I_have_an_iwm.284.29_supported_device> 。
 > 
 >**该驱动仍不完善，不会自动加载（可以用命令`# sysctl net.wlan.devices`查看有无加载，如果没有显示`iwlwifi0`就没有加载），每次都需要手动加载。**
 

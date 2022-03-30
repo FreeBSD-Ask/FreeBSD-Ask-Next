@@ -4,6 +4,8 @@ FTP 意为文件传输协议。使用 FTP 服务搭建服务器可以快速传�
 
 ## pure-ftpd（以 MySQL 支持为例）
 
+> **RFC 2640 的支持已经被移除，所以 Windows 下的 FTP 文件会乱码，见** [**https://www.pureftpd.org/project/pure-ftpd/news/**](https://www.pureftpd.org/project/pure-ftpd/news/) **无法解决，同时不建议把 Windows 的系统编码改为 UTF8 ，会造成更多乱码的发生，比如 zip 文件。**
+>
 > **注意：本示例以 mysql 5.x 为例。**
 
 ### 安装
@@ -17,7 +19,7 @@ FTP 意为文件传输协议。使用 FTP 服务搭建服务器可以快速传�
 
 选中 mysql，其余保持默认选项回车即可：
 
-![](<../.gitbook/assets/在FreeBsd中安装PureFTPD（MySQL） .jpg>)
+![](../.gitbook/assets/在FreeBsd中安装PureFTPD（MySQL）.jpg)
 
 ```
 # make install clean
@@ -25,7 +27,7 @@ FTP 意为文件传输协议。使用 FTP 服务搭建服务器可以快速传�
 
 > **注意：关于 mysql 的基本设置请看 第十七章**
 >
->**请自行安装 mysql，理论上兼容 mysql 5.x、8.x**
+> **请自行安装 mysql，理论上兼容 mysql 5.x、8.x**
 
 ### 配置 /usr/local/etc/pure-ftpd.conf 文件
 
@@ -248,24 +250,21 @@ MYSQLGetDir SELECT Dir FROM users WHERE User='\L'
 # chgrp -R ftpgroup /home/www/
 ```
 
-## proftpd（以 mysql 支持为例）
+### 服务操作
 
-### 安装 proftpd
+```
+# sysrc pureftpd_enable="YES"
+# service pure-ftpd start   #启动服务器
+# service pure-ftpd stop    #停止服务
+# service pure-ftpd restart #重启服务
+
+## proftpd（以 mysql 支持为例）
+```
+
+## 安装 proftpd（以 mysql 支持为例）
 
 ```
 # pkg install proftpd proftpd-mod_sql_mysql
-```
-
-### 服务器操作
-
-```
-# sysrc  proftpd_enable="YES"
-
-# service proftpd start #启动服务器
-
-# service proftpd stop #停止服务
-
-# service proftpd restart #重启服务
 ```
 
 ### 编辑配置文件 /usr/local/etc/proftpd.conf
@@ -376,8 +375,7 @@ Add another user? (yes/no): no
 Goodbye!
 ```
 
-现在已经创建了自己的 proftpd 用户和组 ID。 因此，在添加 ftp 用户时，您将使用它。 您可以通过以
-下方式确定 UID：
+现在已经创建了自己的 proftpd 用户和组 ID。 因此，在添加 ftp 用户时，您将使用它。 您可以通过以 下方式确定 UID：
 
 ```
 # cat /etc/passwd | grep proftpd
@@ -404,7 +402,9 @@ CREATE DATABASE `proftpd` CHARACTER SET utf8 COLLATE utf8_general_ci;
 grant select,insert,update,delete on proftpd.* to pftp@localhost identified by "123456";
 FLUSH PRIVILEGES;  立即生效权限
 ```
+
 或
+
 ```
 grant select,insert,update,delete on *.* to pftp@"localhost" Identified by "123456";
 ```
@@ -451,20 +451,22 @@ INSERT INTO `proftpd`.`users` (`username` , `descr` , `password` , `uid` , `gid`
 Query OK, 1 row affected, 1 warning (0.02 sec)
 ```
 
-
-### 状态操作
+### 服务操作
 
 ```
-# sysrc pureftpd_enable="YES"
-# service pure-ftpd start   #启动服务器
-# service pure-ftpd stop    #停止服务
-# service pure-ftpd restart #重启服务
+# sysrc  proftpd_enable="YES"
+
+# service proftpd start #启动服务器
+
+# service proftpd stop #停止服务
+
+# service proftpd restart #重启服务
 ```
 
 ## **连接到 FTP 服务器**
 
-
 简单示例：
+
 ```
 # telnet localhost 21
 Trying 127.0.0.1...
