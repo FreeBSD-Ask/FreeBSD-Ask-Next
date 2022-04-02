@@ -6,7 +6,7 @@
 
 import type { SidebarConfig } from "@vuepress/theme-default";
 
-export const sideBar: SidebarConfig = [
+export const sideBarConfig: SidebarConfig = [
   {
     text: "FreeBSD 从入门到跑路",
     children: ["/README.md"],

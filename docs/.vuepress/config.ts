@@ -6,7 +6,7 @@
 
 import type { DefaultThemeOptions } from "vuepress";
 import { defineUserConfig } from "vuepress";
-import { sideBar } from "./configs";
+import { sideBarConfig } from "./configs";
 
 export default defineUserConfig<DefaultThemeOptions>({
   // site config
@@ -18,6 +18,21 @@ export default defineUserConfig<DefaultThemeOptions>({
   theme: "@vuepress/theme-default",
   themeConfig: {
     logo: "https://vuejs.org/images/logo.png",
-    sidebar: sideBar,
+    sidebar: sideBarConfig,
   },
+
+  // plugins and their config
+  plugins: [
+    [
+      "@vuepress/plugin-search",
+      {
+        locales: { "/": { placeholder: "搜索" } },
+
+        // exclude the summary page
+        isSearchable: (page: { path: string }) => {
+          return page.path !== "/SUMMARY.html";
+        },
+      },
+    ],
+  ],
 });
