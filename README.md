@@ -4,6 +4,12 @@
 
 ~~* More sidebar definitions to be migrated under `docs/.vuepress/configs/sidebar.ts`~~
 
-~~* Add Caddyfile for deployment with caddyserver~~ ABANDONED: Placed under `.vuepress/dist` directory.
+~~* Add Caddyfile for deployment with caddyserver~~ ABANDONED: Placed under `/usr/local/etc/caddy/` directory.
 
-* Add configuration of GitHub Actions for continuous deployment (CD)
+~~* Add search box support~~
+
+* Add GitHub Actions support
+
+* Add Google Analytics support
+
+* Add PDF generation support
