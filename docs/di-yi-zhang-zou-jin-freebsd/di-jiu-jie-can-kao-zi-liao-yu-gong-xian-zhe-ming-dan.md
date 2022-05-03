@@ -26,9 +26,15 @@
 
 X-Ray
 
+[fanyang1997](https://github.com/fanyang1997)
+
+[orzyyyy](https://github.com/orzyyyy)
+
 [Rintim](https://github.com/Rintim)
 
 [tomblackwhite](https://github.com/tomblackwhite)
+
+isNijikawa
 
 [星不萌](https://www.moebsd.cn)
 
@@ -37,6 +43,8 @@ X-Ray
 [清热解毒口服液](https://linuxacme.cn)
 
 墨子
+
+Jack
 
 兜率
 

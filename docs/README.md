@@ -1,4 +1,5 @@
 # FreeBSD 从入门到跑路
+## FreeBSD 中文社区（CFC）
 
 ## 概述
 
@@ -24,7 +25,7 @@
 
 ### 内容提要
 
-本书是由道长发起，并由 FreeBSD QQ 群 905149943 的一些群成员参与编写的《FreeBSD 从入门到跑路》。我们尝试从 0 开始，带领普通人走进 FreeBSD 世界，充分参考了 FreeBSD Handbook，构建了一个完整、科学的目录体系。本书不是一个教程的大杂烩亦或者是大集合，而是为了构建一个自成体系的一本开源书籍。全书共分二十九章，既强调了学习 FreeBSD 的必要基础也提供了内核设计与实现等专业性较强的教程。本书可作为高等学校“FreeBSD 操作系统”课程的本科生教材，同时也适合相关专业研究生或计算机技术人员参考阅读。
+本书是由道长发起，并由 FreeBSD QQ 群 905149943 的一些群成员参与编写的《FreeBSD 从入门到跑路》。我们尝试从 0 开始，带领普通人走进 FreeBSD 世界，充分参考了 FreeBSD Handbook，构建了一个完整、科学的目录体系。本书不是一个教程的大杂烩亦或者是大集合，而是为了构建一个自成体系的一本开源书籍。全书共分三十章，既强调了学习 FreeBSD 的必要基础也提供了内核设计与实现等专业性较强的教程。本书可作为高等学校“FreeBSD 操作系统”课程的本科生教材，同时也适合相关专业研究生或计算机技术人员参考阅读。
 
 ### 开源维护与捐赠
 
@@ -32,7 +33,7 @@
 
 [点此捐赠 FreeBSD 基金会](https://freebsdfoundation.org/donate)。
 
-为了能够更好地维护本书，我们采用了 Gitbook 平台来进行协作。对于无法直接从 GitBook 导出为 PDF 的问题（我们提供了 PDF 的参考版本于 release），我们深感抱歉，我们目前没有财力为其提供所需要的企业版本（15 刀一个月）。如果您想为我们提供捐助，请加入我们的 [TG 群](https://t.me/freebsdba) 或者 QQ 群 905149943。 如果您也想参与编写，具体请参考 [WIKI](https://github.com/FreeBSD-Ask/FreeBSD-Ask/wiki/%E3%80%8AFreeBSD-%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E8%B7%91%E8%B7%AF%E3%80%8B%E7%BC%96%E8%BE%91%E6%8C%87%E5%8D%97)，关于贡献者名单请参考 [第一章 第九节](./di-yi-zhang-zou-jin-freebsd/di-jiu-jie-can-kao-zi-liao-yu-gong-xian-zhe-ming-dan)。
+为了能够更好地维护本书，我们采用了 Gitbook 平台来进行协作。对于无法直接从 GitBook 导出为 PDF 的问题（我们提供了 PDF 的参考版本于 release），我们深感抱歉，我们目前没有财力为其提供所需要的企业版本（15 刀一个月）。如果您想为我们提供捐助，请加入我们的 [TG 群](https://t.me/freebsdba) 或者 QQ 群 905149943。 如果您也想参与编写，具体请参考 [WIKI](https://github.com/FreeBSD-Ask/FreeBSD-Ask/wiki/%E3%80%8AFreeBSD-%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E8%B7%91%E8%B7%AF%E3%80%8B%E7%BC%96%E8%BE%91%E6%8C%87%E5%8D%97)，关于贡献者名单请参考 [第一章 第九节](https://book.freebsdcn.org/di-yi-zhang-zou-jin-freebsd/di-jiu-jie-can-kao-zi-liao-yu-gong-xian-zhe-ming-dan)。
 
 **捐赠者:**
 
@@ -110,7 +111,7 @@
 
 ----------------------------------------------------------- 
 
-【2022 Handbook 翻译须知】 
+【2022 FreeBSD 中文社区（CFC）文档翻译须知】 
 
 <https://docs.qq.com/doc/DSUtxYmVwU29EdGVn>
 

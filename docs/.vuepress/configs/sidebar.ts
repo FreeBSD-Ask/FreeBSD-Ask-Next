@@ -347,4 +347,14 @@ export const sideBarConfig: SidebarConfig = [
       "/di-er-shi-ba-zhang-dragonflybsd/di-yi-jie-an-zhuang-yu-pei-zhi.md",
     ],
   },
+  {
+	text: "第二十九章 桌面高级进阶",
+	children: [
+	 "di-er-shi-jiu-zhang-zhuo-mian-gao-ji-jin-jie/di-ling-jie-chuang-kou-guan-li-qi-yu-zhuo-mian-de-qu-bie-yu-lian-xi.md",
+	 "di-er-shi-jiu-zhang-zhuo-mian-gao-ji-jin-jie/di-yi-jie-an-zhuang-i3wm.md",
+	 "di-er-shi-jiu-zhang-zhuo-mian-gao-ji-jin-jie/di-er-jie-an-zhuang-cde.md",
+	 "di-er-shi-jiu-zhang-zhuo-mian-gao-ji-jin-jie/di-san-jie-an-zhuang-awesome.md",
+	 "di-er-shi-jiu-zhang-zhuo-mian-gao-ji-jin-jie/di-san-jie-an-zhuang-fvwm.md",
+	],
+  },
 ];

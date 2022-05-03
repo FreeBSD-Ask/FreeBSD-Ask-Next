@@ -92,7 +92,7 @@ OpenBSD 里的无线网络，配置文件通常是 `hostname.if` ，其中 `if` 
 
 ```
 dhcp 
-nwid '无线名称' wpakey '无线密码'
+join 无线名称 wpakey 无线密码
 ```
 保存后即可。
 
@@ -112,4 +112,4 @@ nwid '无线名称' wpakey '无线密码'
 
 - Absolute OpenBSD 补充
 
-_如果觉得 Firefox 运行不佳，试试 Chromium 。_
+_如果觉得 Firefox 运行缓慢，试试 Epiphany (Gnome 浏览器) 。_
