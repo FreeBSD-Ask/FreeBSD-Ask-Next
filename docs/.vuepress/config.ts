@@ -27,7 +27,7 @@ export default defineUserConfig<DefaultThemeOptions>({
       "@vuepress/plugin-docsearch",
       {
         appId: "4KCP05N90H",
-        apiKey: "76b03f2de8d1d9ff8127689ab6d28e16",
+        apiKey: "938386dc0789ce87b047a5a589001913",
         indexName: "freebsdcn",
       },
     ],
