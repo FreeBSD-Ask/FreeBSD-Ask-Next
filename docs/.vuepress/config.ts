@@ -24,14 +24,11 @@ export default defineUserConfig<DefaultThemeOptions>({
   // plugins and their config
   plugins: [
     [
-      "@vuepress/plugin-search",
+      "@vuepress/plugin-docsearch",
       {
-        locales: { "/": { placeholder: "搜索" } },
-
-        // exclude the summary page
-        isSearchable: (page: { path: string }) => {
-          return page.path !== "/SUMMARY.html";
-        },
+        appId: "4KCP05N90H",
+        apiKey: "938386dc0789ce87b047a5a589001913",
+        indexName: "freebsdcn",
       },
     ],
   ],
