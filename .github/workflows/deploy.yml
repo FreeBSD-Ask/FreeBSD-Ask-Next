@@ -27,7 +27,7 @@ jobs:
           cmd: docs:build
 
       - name: Upload built webpages to our web server
-        uses: appleboy/scp-action@master
+        uses: appleboy/scp-action@v0.1.2
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
