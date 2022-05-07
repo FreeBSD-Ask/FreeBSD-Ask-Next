@@ -1,10 +1,10 @@
 name: Build and Deploy Webpages
 
 on:
-  # push:
-  #   branches: [ main ]
-  # pull_requests:
-  #   branches: [ main ]
+  push:
+    branches: [ main ]
+  pull_requests:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
