@@ -2,9 +2,9 @@ name: Build and Deploy Webpages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -29,8 +29,8 @@ jobs:
       - name: Upload built webpages to our web server
         uses: appleboy/scp-action@v0.1.2
         with:
-          host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
+          host: ${{ secrets.HOST }}
           port: ${{ secrets.PORT }}
           key: ${{ secrets.KEY }}
           source: "docs/.vuepress/dist/*"

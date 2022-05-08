@@ -24,7 +24,8 @@ export default defineUserConfig<DefaultThemeOptions>({
   // plugins and their config
   plugins: [
     [
-      "@vuepress/plugin-docsearch", {
+      "@vuepress/plugin-docsearch",
+      {
         appId: "4KCP05N90H",
         apiKey: "938386dc0789ce87b047a5a589001913",
         indexName: "freebsdcn",
