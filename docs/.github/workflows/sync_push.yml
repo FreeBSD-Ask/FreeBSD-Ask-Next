@@ -28,5 +28,3 @@ jobs:
 
           user_name: "${{ github.event.pusher.name }}"
           user_email: "${{ github.event.pusher.email }}"
-
-          use_rsync: yes
