@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2022 FreeBSD Chinese Community. All rights reserved.
  */
 
-import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+import { searchPlugin } from "@vuepress/plugin-search";
 import { defaultTheme } from "vuepress";
 import { defineUserConfig } from "vuepress";
 import { sideBarConfig } from "./configs";
@@ -20,10 +20,12 @@ export default defineUserConfig({
   }),
 
   plugins: [
-    docsearchPlugin({
-      appId: "4KCP05N90H",
-      apiKey: "938386dc0789ce87b047a5a589001913",
-      indexName: "freebsdcn",
+    searchPlugin({
+      locales: {
+        "/": {
+          placeholder: "搜索",
+        },
+      },
     }),
   ],
 });
