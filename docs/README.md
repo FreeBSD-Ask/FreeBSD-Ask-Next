@@ -1,125 +1,84 @@
-# FreeBSD Handbook 中文手册|官方文档简体中文版
-## 2022 FreeBSD 中文社区（CFC）翻译项目
+# FreeBSD 从入门到跑路
+## FreeBSD 中文社区（CFC）版权所有
 
-**版本说明：当前文档版本同步至官方文档 2022-5-31 commit 2d7aa6834f0fe169cad612719ba144a0a80c104f。如需更新请提交 issue**。
+## 概述
 
->所有章节均已翻译完成，正在校对。如欲参加可直接 pull。
->
->>**警告**
->>
->>**所有文章仅供参考，未经过整体文字校对。请谨慎参考。**
->>
->>若发现存在错误或者纰漏，你可以直接在发起 pull 申请或者 issue 提出看法，也可以在交流群里直接 @ 管理员。
- 
-## 译者
+请注意，PDF 等电子书版本仅供参考，且存在这样或那样的问题，应该以在线版本为主。
 
-|章节|译者|译者备注/章节信息|校对|
-|:---:|:---:|:---:|:---:|
-|前言|ykla||魔王酱|
-|第 1 章：简介|ykla||魔王酱|
-|第 2 章：安装 FreeBSD|ykla||ulianchn38、歸野鴿|
-|3.1-3.2|ykla|第 3 章：FreeBSD 基础||
-|3.3-EOL|亲爱的翻译官|第 3 章：FreeBSD 基础|ykla、歸野鴿|
-|第 4 章：安装应用程序: Package 和 Port|亲爱的翻译官||ykla|
-|5.1-5.2|ykla|翻译工作实际由 ykla 完成|ulianchn38、冰|
-|5.3-5.4.6|冰|重译者|ykla、ulianchn38|
-|5.4.6-EOL|Lin🌠|第 5 章：X Window 系统|ykla、ulianchn38、冰|
-|第 6 章：桌面应用程序|胞嘧啶||ykla|
-|第 7 章：多媒体|无目先生||ykla|
-|第 8 章：配置 FreeBSD 内核|Jasonlecson||ykla、冰|
-|9.1-9.4|潇潇雨竹|第 9 章：打印|ykla|
-|9.5-EOL|ulianchn38|第 9 章：打印|ykla|
-|10.1|Altair|第 10 章：Linux 二进制兼容层|ykla|
-|10.2-EOL|AjiaErin|第 10 章：Linux 二进制兼容层|ykla、冰|
-|第 11 章：wine|Jasonlecson||ykla、冰|
-|第 12 章：设置和调整|胞嘧啶||ykla、冰|
-|第 13 章：FreeBSD 的启动过程|徐艺扬||ykla、冰、歸野鴿|
-|第 14 章：安全|陈诚||ykla、冰|
-|第 15 章：Jail|陈诚||ykla、冰|
-|第 16 章：强制访问控制|陈诚||ykla、冰|
-|第 17 章：安全事件审计|冰||ykla、歸野鴿|
-|第 18 章：存储|Jasonlecson||ykla、冰|
-|第 19 章：GEOM: 模块化磁盘转换框架|Jasonlecson||ykla、冰|
-|第 20 章：Z 文件系统 (ZFS)|徐艺扬、冰||ykla、ulianchn38|
-|第 21 章：其他文件系统|Jasonlecson||ykla|
-|第 22 章：虚拟化|歸野鴿||ykla、冰|
-|第 23 章：本地化 - i18n/L10n 的使用和设置|郴||ykla、冰|
-|第 24 章：更新与升级 FreeBSD|AjiaErin||ykla|
-|第 25 章：DTrace|歸野鴿||ykla、冰|
-|第 26 章：USB Device 模式 / USB OTG|Jasonlecson||ykla|
-|第 27 章：串行通信|胞嘧啶||ykla、冰|
-|第 28 章：PPP|AjiaErin||ykla、冰|
-|第 29 章：电子邮件|AjiaErin||ykla、冰|
-|第 30 章：网络服务器|陈诚||ykla、冰|
-|第 31 章：防火墙|陈诚||ykla、冰|
-|第 32 章：高级网络|陈诚||ykla、冰|
-|附录 A：获取 FreeBSD|亲爱的翻译官||ykla|
-|附录 B：书目|ykla|||
-|附录 C：网络资源|亲爱的翻译官||ykla|
-|附录 D：OpenPGP 密钥|ykla|||
-|术语表|亲爱的翻译官||ykla|
+### 格言
 
->>**注意**
->>
->>**未标明章节或内容由 ykla 翻译。名单排序以提交的先后顺序为准。如译者与校对者重复则删去校对者。**
->>
->>**校对包括格式、排版，不一定对内容进行了审阅。请谨慎参考！**
->
->网站部署 & 维护：Shengyun
+恪守古老的法则，追寻真正的自由。
 
-## Q & A
+### 本书定位
 
- - ~~Q：对 FreeBSD Handbook 进行简体中文翻译的必要性？~~
+我们的目标并非是 Handbook 的翻译，而是编写一本类似于《鸟哥的 Linux 私房菜：基础学习篇》+《鸟哥的 Linux 私房菜：服务器架设篇》二合一的基于 FreeBSD 的教程。也就说我们是 Handbook 的超集。
 
-    - ~~A：~~
+### 编辑指南概要
 
-~~俗话说的好，要想富先修路。要想推广和宣传 FreeBSD，也必须先翻译 Handbook。~~
+我们欢迎所有支持 FreeBSD 的人进行编写，并会将您添加到贡献者名单当中。
 
-~~有些人认为有英语不需要翻译，看不懂的人就不配学习 FreeBSD。此言差矣，Handbook 不专门针对开发者这一个群体，而是针对所有人（<https://docs.freebsd.org/en/books/porters-handbook/porting-why/> 专为开发者编写），类似于 Linux 的 wiki，但是对比下手册更有体系结构。FreeBSD 也并非专门为了某些精英而创设，不懂英语是一件很正常的事情，不同的语言有不同的世界观，只有经过翻译才能让更多普通人走进 FreeBSD，发展 FreeBSD，结缘 FreeBSD。你懂英语，别人不一定懂，不能用你的标准去衡量所有人。FreeBSD 社区以及基金会从未说过不懂英语就无法使用 FreeBSD 这种话。~~
+[详细的编辑指南，点击此处](https://github.com/FreeBSD-Ask/FreeBSD-Ask/wiki)。
 
-~~还有些人认为与其翻译 Handbook 不如我们自己去写原创性的文章，其实翻译handbook，恰恰是为了更好地撰写原创性的文章，我们的另一个项目——[《FreeBSD 从入门到跑路》](https://github.com/FreeBSD-Ask/FreeBSD-Ask)目标就是包括所有 Handbook 有与无的内容。我们认为，翻译文档和贡献代码是同样重要的事情；如果你有原创教程，那我们有教程征集计划——<https://docs.qq.com/doc/DSUJsUFBHTnVWQmtS>
-最重要的是，我们的进程已经完成等待校对。现在还在纠结这个问题这无异于在中国哲学史课程快要上完的时候还在讨论中国到底有没有哲学。~~
+## 前言
 
- - Q：本项目为什么不能向 FreeBSD 上游进行合并？
+### FreeBSD 从入门到跑路
 
-    - A：
+本书诞生于 2021 年 12 月 19 日。编写目的是为了 Make FreeBSD Great Again。编写内容为 FreeBSD 的基础与高阶知识。对于章节安排，如果你有一定的 UNIX 基础可以跳过第 一 章，如果你对 FreeBSD 有一定认识，欢迎你加入我们一起编写本书，贡献自己的力量。
 
-~~很简单，我们无法向上游贡献。<https://wiki.freebsd.org/Doc/Translation> 中的指南无法具体落实，其翻译进度一直是（99%）,实际上是 0。我们多次与 FreeBSD 简体中文翻译负责人（该负责人从 18 年就进行 FreeBSD handbook 的翻译，但始终未能进行）进行联络，始终无法得到及时回应。但本着 FreeBSD 是一个开源的项目，人人都可以 fork 的态度。并不会影响我们的工作进度。也不会导致本项目产生任何问题。我们认为，踏出第一步永远比空谈任何东西都更为重要！~~
+### 内容提要
 
-我们现在需要人手来进行校对并向上游进行合并。要求能够对照英文找到中文的翻译。直接翻译（照抄）ykla 给定的 po 文件。
+本书是由 ykla 发起，并由 FreeBSD 中文社区的一些群成员参与编写的《FreeBSD 从入门到跑路》。我们尝试从 0 开始，带领普通人走进 FreeBSD 世界，充分参考了 FreeBSD Handbook，构建了一个完整、科学的目录体系。本书不是一个教程的大杂烩亦或者是大集合，而是为了构建一个自成体系的一本开源书籍。全书共分三十章，既强调了学习 FreeBSD 的必要基础也提供了内核设计与实现等专业性较强的教程。本书可作为高等学校“FreeBSD 操作系统”课程的本科生教材，同时也适合相关专业研究生或计算机技术人员参考阅读。
 
+### 开源维护与捐赠
 
- - Q：怎样维护？
+![](./.gitbook/assets/proud_donor.gif)
 
-    - A：
+[点此捐赠 FreeBSD 基金会](https://freebsdfoundation.org/donate)。
 
-翻译完毕后约 1 个月整体维护一次。对比官方 Handbook 进行更新。
+为了能够更好地维护本书，我们采用了 Gitbook 平台来进行协作，并使用 Vuepress 来呈现本书。对于无法直接从 GitBook 导出为 PDF 的问题（我们提供了 PDF 的参考版本于 release）以及访问速度慢等问题，我们深感抱歉。我们目前的服务器约 10 美元一个月，如果您想为我们提供捐助，请加入我们的 [TG 群](https://t.me/freebsdba) 或者 QQ 群 319271312。 如果您也想参与编写，具体请参考 [WIKI](https://github.com/FreeBSD-Ask/FreeBSD-Ask/wiki/%E3%80%8AFreeBSD-%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E8%B7%91%E8%B7%AF%E3%80%8B%E7%BC%96%E8%BE%91%E6%8C%87%E5%8D%97)，关于贡献者名单请参考 第一章 第九节。
 
+**捐赠者:**
 
-## 翻译指南
+【FreeBSD 2022 捐赠名单】
 
-<https://docs.qq.com/doc/DSUtxYmVwU29EdGVn>
+<https://docs.qq.com/doc/DSXZ1Q1JOenRzUkp4>
+
+### 激励计划
+
+【FreeBSD 中文社区 2022 教程 激励计划】
+
+<https://docs.qq.com/doc/DSUJsUFBHTnVWQmtS>
+
+### 意见反馈
+
+由于编写者水平所限，书中缺点和谬误之处自不可免，希望同志们随时提出批评意见，以便修正。你可以利用 Github 的各种交互功能与我们联系：提交 Issue、Pull request 或者加入 QQ 群或 TG 群直接联系（yklaxds AT gmail DOT com）等。
+
+### TODO / Wishlist
+
+后续还有很多需要完善的工作，包括不限于:
+
+- FreeBSD 14 统一 shell 为`sh`，教程需要针对其进行统一
+- 整理和上传配置文件和环境
+- 对教程的格式目录进行优化调整
+- 完善目前的空白章节，并对已有内容进行测试校验
+- 积极对外宣传并寻求正式出版
+- 删改外部引用文字/图片等内容或给出规范化的引用声明
+- 因为博通收购 VMware 并作出了诸多商业上的改变，考虑提升 Virtual Box 虚拟机在本文中的地位
+- 考虑删除过于主观性或者没有具体根据的个人观点
+
+### 许可证
+
+本书采用 [BSD-3-Clause License](LICENSE/) 许可证开源。我们在编写过程吸收了一些现有的研究成果，在此表示感谢。引用本书内容时，请务必留下我们的原地址——https://book.bsdcn.org 及署名——FreeBSD 中文社区（CFC）。
+
+### 其他
+
+[FreeBSD Handbook 2022 中文翻译项目](https://handbook.bsdcn.org)
+
+微信公众号: freebsdzh （扫码关注）
+
+![](./.gitbook/assets/qrcode_for_gh_3b263cc9b20b_258.jpg)
 
 ## 关于
-
-### 简介
-来到这里你可能什么也得不到。也将不会失去任何东西。FreeBSD 中文用户社区！恪守古老的法则，追寻真正的自由。BSD 方为真正 UNIX 哲学继承者。加入我们，共同推进 FreeBSD 中国化与世界化。
-
-QQ 群 319271312
-
-
-Telegram 群 <https://t.me/freebsdba>
-
-微信公众号：freebsdzh
-
-关注公众号可加入微信群。
-
-### FreeBSD 中文社区 寄言：
->每一个人的不经意付出和教程完善的分享，都是极具意义的，理论上会长久存在，你做的每一点一滴的努力与付出都会成为历史的印记和未来某些科技的驱动力的先驱。手册是死的，我们对手册的贡献是一直存活的，存活在那些使用 Handbook 的人的心中。
->
->**我希望有更多的人参与进来，一起协作这个开源项目。英语水平和计算机水平固然重要，但是翻译凭借的不是傲慢与偏见，不是苦难哲学，也不是泥潭般的社区，更不是所谓的巨苣，而是我们的心，翻译是用心来完成的！用心，每个人都可以参与，无论是错别字的修正还是大章节的翻译，都是有意义的。**
->
->想参加的朋友可以看看 <https://docs.qq.com/doc/DSUtxYmVwU29EdGVn>
 
 ### FreeBSD 中文社区的愿景
 
