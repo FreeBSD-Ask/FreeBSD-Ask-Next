@@ -27,9 +27,9 @@ jobs:
       - name: Upload built webpages to our web server
         uses: appleboy/scp-action@v0.1.2
         with:
-          username: ${{ secrets.USERNAME }}
           host: ${{ secrets.HOST }}
-          port: ${{ secrets.PORT }}
           key: ${{ secrets.KEY }}
-          source: "docs/.vuepress/dist/*"
-          target: "book-next/"
+          port: ${{ secrets.PORT }}
+          source: ${{ secrets.SOURCE }}
+          target: ${{ secrets.TARGET }}
+          username: ${{ secrets.USERNAME }}
