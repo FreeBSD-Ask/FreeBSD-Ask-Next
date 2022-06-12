@@ -4,18 +4,19 @@
  * @copyright Copyright (c) 2022 FreeBSD Chinese Community. All rights reserved.
  */
 
-import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
-import { defaultTheme, defineUserConfig } from "vuepress";
-import { fullTextSearchPlugin } from "vuepress2-plugin-full-text-search";
-import { sideBarConfig } from "./configs";
+import {googleAnalyticsPlugin} from '@vuepress/plugin-google-analytics';
+import {defaultTheme, defineUserConfig} from 'vuepress';
+import {fullTextSearchPlugin} from 'vuepress2-plugin-full-text-search';
+
+import {sideBarConfig} from './configs';
 
 export default defineUserConfig({
-  lang: "zh-CN",
-  title: "FreeBSD 从入门到跑路",
-  description: "FreeBSD 从入门到跑路",
+  lang: 'zh-CN',
+  title: 'FreeBSD 从入门到跑路',
+  description: 'FreeBSD 从入门到跑路',
 
   theme: defaultTheme({
-    logo: "https://book.bsdcn.org/favicon.ico",
+    logo: 'https://book.bsdcn.org/favicon.ico',
     sidebar: sideBarConfig,
   }),
 

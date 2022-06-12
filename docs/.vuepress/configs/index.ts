@@ -4,4 +4,4 @@
  * @copyright Copyright (c) 2022 FreeBSD Chinese Community. All rights reserved.
  */
 
-export { sideBarConfig } from "./sidebar";
+export {sideBarConfig} from './sidebar';
