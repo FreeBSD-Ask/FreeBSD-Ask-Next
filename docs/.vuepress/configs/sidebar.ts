@@ -252,6 +252,7 @@ export const sideBarConfig: SidebarConfig = [
       '/di-shi-jiu-zhang-wen-xue-gu-shi/di-si-jie-cong-yi-ge-xiang-fa-kan-freebsd-shi-shang-ye-hua-huan-shi-xue-yuan-pai.md',
       '/di-shi-jiu-zhang-wen-xue-gu-shi/di-wu-jie-linux-she-qu-yi-jing-cheng-wei-le-yi-ge-ang-zang-de-ni-tan.md',
       '/di-shi-jiu-zhang-wen-xue-gu-shi/di-liu-jie-linux-bai-ju-yi-ding.md',
+      '/di-shi-jiu-zhang-wen-xue-gu-shi/di-qi-jie-xiao-shuo-freebsd-cong-ru-men-dao-pao-lu.md',
     ],
   },
   {
