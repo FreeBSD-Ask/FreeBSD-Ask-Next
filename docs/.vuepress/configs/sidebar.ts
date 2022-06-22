@@ -217,6 +217,7 @@ export const sideBarConfig: SidebarConfig = [
       '/di-shi-liu-zhang-fu-wu-qi/di-shi-jie-webmin.md',
       '/di-shi-liu-zhang-fu-wu-qi/di-shi-yi-jie-rsync-tong-bu-fu-wu.md',
       '/di-shi-liu-zhang-fu-wu-qi/di-shi-er-jie-shi-jian-fu-wu.md',
+      '/di-shi-liu-zhang-fu-wu-qi/di-shi-san-jie-wildfly.md',
     ],
   },
   {
@@ -230,7 +231,6 @@ export const sideBarConfig: SidebarConfig = [
       '/di-shi-qi-zhang-wang-luo-fu-wu-qi/di-liu-jie-typecho.md',
       '/di-shi-qi-zhang-wang-luo-fu-wu-qi/di-qi-jie-ssl-pei-zhi.md',
       '/di-shi-qi-zhang-wang-luo-fu-wu-qi/di-ba-jie-postgresql-yu-pgadmin4.md',
-      '/di-shi-liu-zhang-fu-wu-qi/di-shi-san-jie-wildfly.md',
     ],
   },
   {
