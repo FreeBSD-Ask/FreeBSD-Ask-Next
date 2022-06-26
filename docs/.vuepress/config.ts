@@ -25,8 +25,9 @@ export default defineUserConfig({
     docsBranch: 'main',
     editLinkPattern: ':repo/edit/:branch/:path',
     editLinkText: '在 GitHub 上编辑此页',
+    lastUpdated: 'true',
     lastUpdatedText: '上次更新',
-    contributorsText: '贡献者', 
+    contributorsText: '贡献者',
   }),
 
   plugins: [
