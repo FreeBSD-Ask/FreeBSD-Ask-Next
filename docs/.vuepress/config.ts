@@ -5,10 +5,11 @@
  */
 
 import {googleAnalyticsPlugin} from '@vuepress/plugin-google-analytics';
-import {defaultTheme, defineUserConfig} from 'vuepress';
+import {defineUserConfig} from '@vuepress/cli';
 import {fullTextSearchPlugin} from 'vuepress2-plugin-full-text-search';
 import {sitemapPlugin} from 'vuepress-plugin-sitemap2';
 import {seoPlugin} from "vuepress-plugin-seo2";
+import {defaultTheme} from '@vuepress/theme-default'
 
 import {sideBarConfig} from './configs';
 
