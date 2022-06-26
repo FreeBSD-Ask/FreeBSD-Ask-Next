@@ -7,7 +7,8 @@
 import {googleAnalyticsPlugin} from '@vuepress/plugin-google-analytics';
 import {defaultTheme, defineUserConfig} from 'vuepress';
 import {fullTextSearchPlugin} from 'vuepress2-plugin-full-text-search';
-
+import {sitemapPlugin} from 'vuepress-plugin-sitemap2';,
+  
 import {sideBarConfig} from './configs';
 
 export default defineUserConfig({
@@ -18,12 +19,18 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: 'https://book.bsdcn.org/favicon.ico',
     sidebar: sideBarConfig,
+    editLinkText: '在 GitHub 上编辑此页',
+    lastUpdatedText: '上次更新',
+    contributorsText: '贡献者', 
   }),
 
   plugins: [
     fullTextSearchPlugin,
     googleAnalyticsPlugin({
       id: 'G-31WQ8W3FF6',
+    }),
+    sitemapPlugin({
+      hostname: 'https://handbook.bsdcn.org',
     }),
   ],
 });
