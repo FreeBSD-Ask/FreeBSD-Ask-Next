@@ -17,7 +17,7 @@ export default defineUserConfig({
   description: 'FreeBSD 从入门到跑路',
 
   theme: defaultTheme({
-    logo: 'https://book.bsdcn.org/favicon.ico',
+    logo: '/favicon.ico',
     sidebar: sideBarConfig,
     docsRepo: 'https://github.com/FreeBSD-Ask/FreeBSD-Ask',
     docsBranch: 'main',
