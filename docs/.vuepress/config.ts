@@ -8,7 +8,8 @@ import {googleAnalyticsPlugin} from '@vuepress/plugin-google-analytics';
 import {defaultTheme, defineUserConfig} from 'vuepress';
 import {fullTextSearchPlugin} from 'vuepress2-plugin-full-text-search';
 import {sitemapPlugin} from 'vuepress-plugin-sitemap2';
-  
+import {seoPlugin} from "vuepress-plugin-seo2";
+
 import {sideBarConfig} from './configs';
 
 export default defineUserConfig({
@@ -33,6 +34,9 @@ export default defineUserConfig({
       id: 'G-31WQ8W3FF6',
     }),
     sitemapPlugin({
+      hostname: 'https://handbook.bsdcn.org',
+    }),
+    seoPlugin({
       hostname: 'https://handbook.bsdcn.org',
     }),
   ],
