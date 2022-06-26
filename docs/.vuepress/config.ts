@@ -36,8 +36,6 @@ export default defineUserConfig({
     }),
     sitemapPlugin({
       hostname: 'https://book.bsdcn.org',
-      modifyTimeGetter: (page) =>
-        'fs.statSync(app.dir.source(page.filePathRelative)).mtime.toISOString();'
     }),
     seoPlugin({
       hostname: 'https://book.bsdcn.org',
