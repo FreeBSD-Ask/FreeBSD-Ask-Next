@@ -34,10 +34,10 @@ export default defineUserConfig({
       id: 'G-31WQ8W3FF6',
     }),
     sitemapPlugin({
-      hostname: 'https://handbook.bsdcn.org',
+      hostname: 'https://book.bsdcn.org',
     }),
     seoPlugin({
-      hostname: 'https://handbook.bsdcn.org',
+      hostname: 'https://book.bsdcn.org',
     }),
   ],
 });
