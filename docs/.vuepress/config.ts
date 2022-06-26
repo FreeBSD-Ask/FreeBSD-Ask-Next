@@ -19,6 +19,10 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: 'https://book.bsdcn.org/favicon.ico',
     sidebar: sideBarConfig,
+    docsRepo: 'https://github.com/FreeBSD-Ask/FreeBSD-Ask',
+    docsBranch: 'main',
+    docsDir: 'docs',
+    editLinkPattern: ':repo/-/edit/:branch/:path',
     editLinkText: '在 GitHub 上编辑此页',
     lastUpdatedText: '上次更新',
     contributorsText: '贡献者', 
