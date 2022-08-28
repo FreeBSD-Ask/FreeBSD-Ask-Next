@@ -6,7 +6,7 @@
 
 import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 import { defineUserConfig } from '@vuepress/cli'
-import { nextSearchPlugin } from 'vuepress-plugin-next-search'
+import { fullTextSearchPlugin } from 'vuepress2-plugin-full-text-search'
 import { sitemapPlugin } from 'vuepress-plugin-sitemap2'
 import { seoPlugin } from 'vuepress-plugin-seo2'
 import { defaultTheme } from '@vuepress/theme-default'
@@ -30,7 +30,7 @@ export default defineUserConfig({
   }),
 
   plugins: [
-    nextSearchPlugin,
+    fullTextSearchPlugin,
     googleAnalyticsPlugin({
       id: 'G-31WQ8W3FF6',
     }),
