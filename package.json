@@ -1,7 +1,7 @@
 {
   "author": "FreeBSD Chinese Community",
   "license": "BSD-3-Clause",
-  "main": "index.js",
+  "main": "index.ts",
   "name": "freebsd-ask-next",
   "version": "1.0.0",
   "devDependencies": {
