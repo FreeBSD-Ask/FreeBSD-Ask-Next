@@ -1,13 +1,13 @@
 {
   "author": "FreeBSD Chinese Community",
   "license": "BSD-3-Clause",
-  "main": "index.ts",
+  "main": "index.js",
   "name": "freebsd-ask-next",
   "version": "1.0.0",
   "devDependencies": {
-    "@vuepress/plugin-google-analytics": "^2.0.0-beta.48",
-    "vuepress": "^2.0.0-beta.48",
-    "vuepress-plugin-next-search": "^1.0.6",
+    "@vuepress/plugin-google-analytics": "^2.0.0-beta.50",
+    "vuepress": "^2.0.0-beta.50",
+    "vuepress2-plugin-full-text-search": "^0.2.0",
     "vuepress-plugin-sitemap2": "^2.0.0-beta.94",
     "vuepress-plugin-seo2": "^2.0.0-beta.94"
   },
