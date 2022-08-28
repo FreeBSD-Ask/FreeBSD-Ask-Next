@@ -15,4 +15,5 @@
     "docs:build": "vuepress build docs",
     "docs:dev": "vuepress dev docs"
   }
+  "type": "module",
 }
