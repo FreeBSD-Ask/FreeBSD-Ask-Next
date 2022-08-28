@@ -22,7 +22,7 @@
 
 我们欢迎所有支持 FreeBSD 的人进行编写，并会将其添加到贡献者名单当中。
 
-[详细的编辑指南，点击此处](https://github.com/FreeBSD-Ask/FreeBSD-Ask/wiki)
+[详细的编辑指南，请点击此处](https://github.com/FreeBSD-Ask/FreeBSD-Ask/wiki)
 
 ## 前言
 
