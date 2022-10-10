@@ -21,18 +21,7 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        id: yarn-cache
-        with:
-          path: |
-            **/node_modules
-          key: ${{ runner.os }}-yarn-5-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-5-
-
       - name: Install dependencies
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn --frozen-lockfile
 
       - name: Build VuePress site
