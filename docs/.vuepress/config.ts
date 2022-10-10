@@ -33,9 +33,12 @@ export default defineUserConfig({
     googleAnalyticsPlugin({
       id: 'G-31WQ8W3FF6',
     }),
-    fullTextSearchPlugin({
+   fullTextSearchPlugin({
       locales: {
         '/': {
+          placeholder: 'Search',
+        },
+        '/zh/': {
           placeholder: '搜索',
         },
       },
