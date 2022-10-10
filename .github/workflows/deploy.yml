@@ -22,7 +22,7 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: yarn --frozen-lockfile
+        run: yarn 
 
       - name: Build VuePress site
         run: yarn docs:build
