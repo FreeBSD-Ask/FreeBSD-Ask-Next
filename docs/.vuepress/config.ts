@@ -9,7 +9,7 @@ import { defineUserConfig } from '@vuepress/cli'
 import { sitemapPlugin } from 'vuepress-plugin-sitemap2'
 import { seoPlugin } from 'vuepress-plugin-seo2'
 import { defaultTheme } from '@vuepress/theme-default'
-import { fullTextSearchPlugin  } from 'vuepress-plugin-full-text-search2'
+import { searchPlugin } from '@vuepress/plugin-search'
 
 import {sideBarConfig} from './configs'
 
@@ -33,7 +33,7 @@ export default defineUserConfig({
     googleAnalyticsPlugin({
       id: 'G-31WQ8W3FF6',
     }),
-   fullTextSearchPlugin({
+    searchPlugin({
       locales: {
         '/': {
           placeholder: 'Search',
