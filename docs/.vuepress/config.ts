@@ -9,6 +9,7 @@ import { defineUserConfig } from '@vuepress/cli'
 import { sitemapPlugin } from 'vuepress-plugin-sitemap2'
 import { seoPlugin } from 'vuepress-plugin-seo2'
 import { defaultTheme } from '@vuepress/theme-default'
+import { fullTextSearchPlugin  } from 'vuepress-plugin-full-text-search2'
 
 import {sideBarConfig} from './configs'
 
@@ -31,6 +32,13 @@ export default defineUserConfig({
   plugins: [
     googleAnalyticsPlugin({
       id: 'G-31WQ8W3FF6',
+    }),
+    fullTextSearchPlugin({
+      locales: {
+        '/': {
+          placeholder: '搜索',
+        },
+      },
     }),
     sitemapPlugin({
       hostname: 'https://book.bsdcn.org',
