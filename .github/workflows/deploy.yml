@@ -22,10 +22,10 @@ jobs:
           node-version: '14'
 
       - name: Install dependencies
-        run: yarn 
+        run: npm install
 
       - name: Build VuePress site
-        run: yarn docs:build
+        run: npm docs:build
 
       - name: Upload built webpages to our web server
         uses: appleboy/scp-action@v0.1.3
