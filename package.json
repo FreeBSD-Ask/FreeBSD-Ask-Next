@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "2.0.0-beta.51",
-    "vuepress": "2.0.0-beta.51",
+    "vuepress": "^2.0.0-beta.51",
     "vuepress-plugin-sitemap2": "2.0.0-beta.108",
     "vuepress-plugin-seo2": "2.0.0-beta.108",
     "vuepress-plugin-full-text-search2": "^0.4.0"
