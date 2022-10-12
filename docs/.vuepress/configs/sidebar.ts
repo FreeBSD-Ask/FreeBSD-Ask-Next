@@ -8,7 +8,7 @@ import type {SidebarConfig} from '@vuepress/theme-default';
 
 export const sideBarConfig: SidebarConfig = [
   {
-    text: 'FreeBSD 从入门到跑路',
+    text: '目录',
     children: ['/README.md'],
   },
   {
@@ -277,6 +277,7 @@ export const sideBarConfig: SidebarConfig = [
   {
     text: '第二十二章 编程与开发',
     children: [
+	  '/di-er-shi-er-zhang-bian-cheng-yu-kai-fa/di-ling-jie-ru-he-ding-yue-freebsd-you-jian-lie-biao.md',
       '/di-er-shi-er-zhang-bian-cheng-yu-kai-fa/di-yi-jie-ru-he-bao-gao-bug.md',
       '/di-er-shi-er-zhang-bian-cheng-yu-kai-fa/di-er-jie-ru-he-ti-jiao-yi-ge-ruan-jian-bao.md',
       '/di-er-shi-er-zhang-bian-cheng-yu-kai-fa/di-san-jie-ru-he-can-yu-freebsd-xie-zuo.md',
