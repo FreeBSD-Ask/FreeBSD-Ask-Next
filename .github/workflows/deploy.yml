@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: Build and Deploy Webpages
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout from repository
@@ -19,14 +19,56 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '18'
 
-      - name: Install dependencies
-        run: npm install
+       - name: Cache nodejs dependencies
+        uses: actions/cache@v3
+        id: yarn-cache
+        with:
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}-yarn-5-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-5-
 
-      - name: Build VuePress site
-        run: npm run docs:build
-
+      - name: Install nodejs dependencies
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn --frozen-lockfile
+        
+      - name: Install zh-CN Fonts for Export PDF
+        run: |
+         sudo apt install xfonts-encodings xfonts-utils
+         git clone https://github.com/ykla/ttf-mswin11-zh-deb
+         cd ttf-mswin11-zh-deb
+         sudo dpkg -i ttf-ms-win11-*.deb
+        
+      - name: Build VuePress site and Export PDF
+        run: yarn docs:build && yarn docs:export
+        
+      - name: Remove vuepress from PDF
+        run: |
+          sudo apt install rename 
+          cd docs/.vuepress/dist/
+          rename -v "s/vuepress/FreeBSD-ask/" vuepress-*.pdf
+        
+      - name: Generate release tag
+        id: tag
+        run: |
+          echo "::set-output name=release_tag::FreeBSD-ask_$(date +"%Y.%m.%d_%H-%M")"
+      
+      - name: Release PDF to FreeBSD-Ask/FreeBSD-Ask
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_REPOSITORY: FreeBSD-Ask/FreeBSD-Ask
+        with:
+          token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+          repository: FreeBSD-Ask/FreeBSD-Ask
+          tag_name: ${{ steps.tag.outputs.release_tag }}
+          files: "docs/.vuepress/dist/FreeBSD-ask-*.pdf"
+     
+      - name: Change PDF file name to FreeBSD-ask.pdf
+        run: mv docs/.vuepress/dist/FreeBSD-ask-*.pdf docs/.vuepress/dist/FreeBSD-从入门到跑路.pdf
+        
       - name: Upload built webpages to our web server
         uses: appleboy/scp-action@v0.1.3
         with:
