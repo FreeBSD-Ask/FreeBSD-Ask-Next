@@ -24,6 +24,7 @@ export default defineUserConfig({
 
 const routeOrder = [
       '/README.html',
+      '/SUMMARY.html',
       '/di-ling-zhang-freebsd-zhong-wen-she-qu/di-yi-jie-freebsd-faq.html',
       '/di-ling-zhang-freebsd-zhong-wen-she-qu/di-er-jie-freebsd-zhong-wen-she-qu-cfc-fa-zhan-gui-hua.html',
       '/di-ling-zhang-freebsd-zhong-wen-she-qu/di-san-jie-freebsd-de-bu-zu-zhi-chu.html',
