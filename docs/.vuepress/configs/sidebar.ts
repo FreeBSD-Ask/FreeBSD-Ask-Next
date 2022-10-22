@@ -8,8 +8,12 @@ import type {SidebarConfig} from '@vuepress/theme-default';
 
 export const sideBarConfig: SidebarConfig = [
   {
-    text: '目录',
+    text: 'FreeBSD 从入门到跑路',
     children: ['/README.md'],
+  },
+  {
+    text: '目录',
+    children: ['/SUMMARY.md'],
   },
   {
     text: '第〇章 FreeBSD 中文社区',
