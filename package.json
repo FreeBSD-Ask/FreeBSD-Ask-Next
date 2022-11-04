@@ -8,8 +8,8 @@
     "@condorhero/vuepress-plugin-export-pdf-v2": "^2.0.1",
     "vuepress": "2.0.0-beta.53",
     "@vuepress/plugin-google-analytics": "2.0.0-beta.53",
-    "vuepress-plugin-sitemap2": "2.0.0-beta.119",
-    "vuepress-plugin-seo2": "2.0.0-beta.119",
+    "vuepress-plugin-sitemap2": "2.0.0-beta.120",
+    "vuepress-plugin-seo2": "2.0.0-beta.120",
     "@vuepress/plugin-docsearch": "2.0.0-beta.53"
   },
   "scripts": {
