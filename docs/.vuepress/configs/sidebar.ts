@@ -136,7 +136,7 @@ export const sideBarConfig: SidebarConfig = [
     text: '第9章 Jail',
     children: [
 		'/di-9-zhang-jail/di-9.1-jie-jail-yu-docker-de-bi-jiao.md',
-		'/di-9-zhang-jail/di-er-jie-jail-xiang-guan-shu-yu.md',
+		'/di-9-zhang-jail/di-9.2-jie-jail-xiang-guan-shu-yu.md',
 		'/di-9-zhang-jail/di-9.3-jie-jail-pei-zhi.md',
 		'/di-9-zhang-jail/di-9.4-jie-jail-geng-xin.md',
 		'/di-9-zhang-jail/di-9.5-jie-shi-yong-ezjail-guan-li-jail.md',
@@ -147,7 +147,7 @@ export const sideBarConfig: SidebarConfig = [
     children: [
 		'/di-10-zhang-xu-ni-hua/di-10.1-jie-xu-ni-hua-jian-jie.md',
 		'/di-10-zhang-xu-ni-hua/di-10.2-jie-an-zhuang-virtual-box.md',
-		'/di-10-zhang-xu-ni-hua/di-san-jie-an-zhuang-bhyve.md',
+		'/di-10-zhang-xu-ni-hua/di-10.3-jie-an-zhuang-bhyve.md',
 		'/di-10-zhang-xu-ni-hua/di-10.4-jie-shi-yong-cbsd-guan-li-bhyve.md',
 		'/di-10-zhang-xu-ni-hua/di-10.5-jie-shi-yong-bhyve-an-zhuang-windows-10.md',
 		'/di-10-zhang-xu-ni-hua/di-10.6-jie-an-zhuang-xen.md',
@@ -168,7 +168,7 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-12-zhang-geom-cun-chu-kuang-jia/di-12.1-jie-gai-shu.md',
 		'/di-12-zhang-geom-cun-chu-kuang-jia/di-12.2-jie-raid-0.md',
 		'/di-12-zhang-geom-cun-chu-kuang-jia/di-12.3-jie-raid-1.md',
-		'/di-12-zhang-geom-cun-chu-kuang-jia/di-si-jie-raid-3.md',
+		'/di-12-zhang-geom-cun-chu-kuang-jia/di-12.4-jie-raid-3.md',
 		'/di-12-zhang-geom-cun-chu-kuang-jia/di-12.5-jie-ruan-raid-pei-zhi.md',
 		'/di-12-zhang-geom-cun-chu-kuang-jia/di-12.6-jie-geom-gate-wang-luo.md',
 		'/di-12-zhang-geom-cun-chu-kuang-jia/di-12.7-jie-ci-pan-zhuang-zhi-biao-qian.md',
@@ -240,7 +240,7 @@ export const sideBarConfig: SidebarConfig = [
   {
     text: '第18章 树莓派与嵌入式',
     children: [
-		'/di-18-zhang-shu-mei-pai-yu-qian-ru-shi/di-yi-jie-shu-mei-pai-jian-jie.md',
+		'/di-18-zhang-shu-mei-pai-yu-qian-ru-shi/di-18.1-jie-shu-mei-pai-de-jian-jie.md',
 		'/di-18-zhang-shu-mei-pai-yu-qian-ru-shi/di-18.2-jie-xi-tong-an-zhuang.md',
 		'/di-18-zhang-shu-mei-pai-yu-qian-ru-shi/di-18.3-jie-shi-yong-pei-zhi.md',
 		'/di-18-zhang-shu-mei-pai-yu-qian-ru-shi/di-18.4-jie-usb-wang-ka-yu-wifi.md',
@@ -281,7 +281,7 @@ export const sideBarConfig: SidebarConfig = [
   {
     text: '第22章 编程与开发',
     children: [
-		'/di-22-zhang-bian-cheng-yu-kai-fa/di-ling-jie-ru-he-ding-yue-freebsd-you-jian-lie-biao.md',
+		'/di-22-zhang-bian-cheng-yu-kai-fa/di-22.0-jie-ru-he-ding-yue-freebsd-de-you-jian-lie-biao.md',
 		'/di-22-zhang-bian-cheng-yu-kai-fa/di-22.1-jie-ru-he-bao-gao-bug.md',
 		'/di-22-zhang-bian-cheng-yu-kai-fa/di-22.2-jie-ru-he-ti-jiao-yi-ge-ruan-jian-bao.md',
 		'/di-22-zhang-bian-cheng-yu-kai-fa/di-22.3-jie-ru-he-can-yu-freebsd-xie-zuo.md',
@@ -319,7 +319,7 @@ export const sideBarConfig: SidebarConfig = [
   {
     text: '第25章 系统设计与分析',
     children: [
-		'/di-25-zhang-xi-tong-she-ji-yu-fen-xi/di-yi-jie-freebsd-she-ji-gai-yao.md',
+		'/di-25-zhang-xi-tong-she-ji-yu-fen-xi/di-25.1-jie-freebsd-she-ji-gai-shu.md',
 		'/di-25-zhang-xi-tong-she-ji-yu-fen-xi/di-25.2-jie-nei-he.md',
 		'/di-25-zhang-xi-tong-she-ji-yu-fen-xi/di-25.3-jie-jin-cheng.md',
 		'/di-25-zhang-xi-tong-she-ji-yu-fen-xi/di-25.4-jie-nei-cun-guan-li.md',
