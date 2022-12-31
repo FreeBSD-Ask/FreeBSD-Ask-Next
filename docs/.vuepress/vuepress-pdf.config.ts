@@ -102,6 +102,7 @@ const routeOrder = [
 		'/di-9-zhang-jail/di-9.3-jie-jail-pei-zhi.html',
 		'/di-9-zhang-jail/di-9.4-jie-jail-geng-xin.html',
 		'/di-9-zhang-jail/di-9.5-jie-shi-yong-ezjail-guan-li-jail.html',
+		'/di-9-zhang-jail/di-9.6-jie-shi-yong-qjail-guan-li-jail.html',
 		'/di-10-zhang-xu-ni-hua/di-10.1-jie-xu-ni-hua-jian-jie.html',
 		'/di-10-zhang-xu-ni-hua/di-10.2-jie-an-zhuang-virtual-box.html',
 		'/di-10-zhang-xu-ni-hua/di-10.3-jie-an-zhuang-bhyve.html',
