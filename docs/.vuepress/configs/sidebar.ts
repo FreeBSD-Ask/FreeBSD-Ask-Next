@@ -140,6 +140,7 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-9-zhang-jail/di-9.3-jie-jail-pei-zhi.md',
 		'/di-9-zhang-jail/di-9.4-jie-jail-geng-xin.md',
 		'/di-9-zhang-jail/di-9.5-jie-shi-yong-ezjail-guan-li-jail.md',
+	        '/di-9-zhang-jail/di-9.6-jie-shi-yong-qjail-guan-li-jail.md',
     ],
   },
   {
