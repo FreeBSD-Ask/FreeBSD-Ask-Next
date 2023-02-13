@@ -258,6 +258,7 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-19-zhang-wen-xue-gu-shi/di-19.5-jie-linux-she-qu-yi-jing-cheng-wei-le-yi-ge-ang-zang-de-ni-tan.md',
 		'/di-19-zhang-wen-xue-gu-shi/di-19.6-jie-linux-bai-ju-yi-ding-bo-freebsd-da-bai-ju.md',
 		'/di-19-zhang-wen-xue-gu-shi/di-19.7-jie-xiao-shuo-freebsd-cong-ru-men-dao-pao-lu.md',
+	    	'/di-19-zhang-wen-xue-gu-shi/di-19.8-jie-zhong-ti-freebsd-yu-da-bai-ju.md',
     ],
   },
   {
