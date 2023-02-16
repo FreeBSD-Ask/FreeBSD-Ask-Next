@@ -19,7 +19,7 @@ export const sideBarConfig: SidebarConfig = [
     text: '第0章 FreeBSD 中文社区',
     children: [
 		'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.1-jie-freebsd-faq.md',
-		'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.2-jie-freebsd-zhong-wen-she-qu-cfc-fa-zhan-gui-hua.md',
+		'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.2-jie-freebsd-zhong-wen-she-qu-fa-zhan-gui-hua.md',
 		'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.3-jie-freebsd-de-bu-zu-zhi-chu.md',
 		'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.4-jie-freebsd-fa-hang-shuo-ming.md',
     ],
