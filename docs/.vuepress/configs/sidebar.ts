@@ -294,6 +294,7 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-22-zhang-bian-cheng-yu-kai-fa/di-22.9-jie-csh-yu-qi-ta-shell.md',
 		'/di-22-zhang-bian-cheng-yu-kai-fa/di-22.10-jie-tong-guo-ida-7-tiao-shi-freebsd.md',
 		'/di-22-zhang-bian-cheng-yu-kai-fa/di-22.11-jie-git.md',
+		'/di-22-zhang-bian-cheng-yu-kai-fa/di-22.12-jie-an-zhuang-code-server-he-clangd.md',
     ],
   },
   {
