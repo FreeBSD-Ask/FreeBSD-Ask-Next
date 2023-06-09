@@ -376,4 +376,13 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-30-zhang-linux-jian-rong-ceng/di-30.5-jie-gao-ji-jiao-cheng-linux-jian-rong-ceng-yu-jail.md',
     ],
   },
+ {
+    text: '第31章 TwinCAT/BSD',
+    children: [
+		'/di-31-zhang-twincatbsd/di-31.1-jie-jian-jie.md',
+		'/di-31-zhang-twincatbsd/di-31.2-jie-xi-tong-an-zhuang-yu-ji-ben-pei-zhi.md',
+		'/di-31-zhang-twincatbsd/di-31.3-jie-kai-fa-huan-jing-pei-zhi.md',
+		'/di-31-zhang-twincatbsd/di-31.4-jie-gu-zhang-pai-chu.md',
+    ],
+  },	
 ];
