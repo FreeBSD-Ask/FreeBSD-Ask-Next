@@ -222,6 +222,7 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-16-zhang-fu-wu-qi/di-16.11-jie-rsync-tong-bu-fu-wu.md',
 		'/di-16-zhang-fu-wu-qi/di-16.12-jie-shi-jian-fu-wu.md',
 		'/di-16-zhang-fu-wu-qi/di-16.13-jie-wildfly.md',
+	    	'/di-16-zhang-fu-wu-qi/di-16.14-jie-slurm.md',
     ],
   },
   {
@@ -235,7 +236,6 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-17-zhang-wang-luo-fu-wu-qi/di-17.6-jie-typecho.md',
 		'/di-17-zhang-wang-luo-fu-wu-qi/di-17.7-jie-ssl-pei-zhi.md',
 		'/di-17-zhang-wang-luo-fu-wu-qi/di-17.8-jie-postgresql-yu-pgadmin4.md',
-	  	'/di-16-zhang-fu-wu-qi/di-16.14-jie-slurm.md',
     ],
   },
   {
