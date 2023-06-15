@@ -379,7 +379,7 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-30-zhang-linux-jian-rong-ceng/di-30.1-jie-linux-jian-rong-ceng-shi-xian.md',
 		'/di-30-zhang-linux-jian-rong-ceng/di-30.2-jie-linux-jian-rong-ceng-ji-yu-centos-yuan-sheng.md',
 		'/di-30-zhang-linux-jian-rong-ceng/di-30.3-jie-linux-jian-rong-ceng-ji-yu-ubuntudebian.md',
-		'/di-30-zhang-linux-jian-rong-ceng/di-30.4-jie-linux-jian-rong-ceng-ji-yu-archlinux.md',
+		'/di-30-zhang-linux-jian-rong-ceng/di-30.4-jie-linux-jian-rong-ceng-ji-yu-archlinux-bootstrap.md',
 		'/di-30-zhang-linux-jian-rong-ceng/di-30.5-jie-linux-jian-rong-ceng-ji-yu-archlinuxpacman.md',
 	    	'/di-30-zhang-linux-jian-rong-ceng/di-30.6-jie-gao-ji-jiao-cheng-linux-jian-rong-ceng-yu-jail.md',
     ],
