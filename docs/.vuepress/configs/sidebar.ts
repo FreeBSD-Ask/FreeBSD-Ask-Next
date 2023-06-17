@@ -265,6 +265,7 @@ export const sideBarConfig: SidebarConfig = [
 	    	'/di-19-zhang-wen-xue-gu-shi/di-19.12-jie-shi-ge-xuan.md',
 	    	'/di-19-zhang-wen-xue-gu-shi/di-19.13-jie-jian-yi-dao-feng.md',
 	  	'/di-19-zhang-wen-xue-gu-shi/di-19.14-jie-xiao-shuo-ni-yu-an.md',
+	    	'/di-19-zhang-wen-xue-gu-shi/di-19.15-jie-wu-xiang-he-chu.md',
     ],
   },
   {
