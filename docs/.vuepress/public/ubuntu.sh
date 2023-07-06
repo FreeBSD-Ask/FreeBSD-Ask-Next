@@ -71,7 +71,7 @@ if ! /usr/bin/which -s debootstrap; then
 echo "now we will bootstrap ${codename}.press any key."
 read  answer
 
-sh `which debootstrap` ${codename} ${rootdir} ${baseurl}
+debootstrap ${codename} ${rootdir} ${baseurl}
 
 if [ ! "$(sysrc -f /boot/loader.conf -qn nullfs_load)" = "YES" ]; then
         echo "nullfs_load should load. continue? (N|y)"
@@ -112,7 +112,7 @@ echo "deb-src http://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe 
 echo "deb http://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse" >> /compat/ubuntu/etc/apt/sources.list
 echo "deb-src http://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse" >> /compat/ubuntu/etc/apt/sources.list
 echo "deb http://mirrors.ustc.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse" >> /compat/ubuntu/etc/apt/sources.list
-echo "-src http://mirrors.ustc.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse" >> /compat/ubuntu/etc/apt/sources.list
+echo "deb-src http://mirrors.ustc.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse" >> /compat/ubuntu/etc/apt/sources.list
 echo "deb http://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse" >> /compat/ubuntu/etc/apt/sources.list
 echo "deb-src http://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse" >> /compat/ubuntu/etc/apt/sources.list
 
