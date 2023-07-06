@@ -113,6 +113,6 @@ echo "deb-src http://mirrors.ustc.edu.cn/ubuntu/ jammy-updates main restricted u
 echo "deb http://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse" >> /compat/ubuntu/etc/apt/sources.list
 echo "deb-src http://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse" >> /compat/ubuntu/etc/apt/sources.list
 
-echo "remove rsyslog and install nano and wget"
-chroot ${rootdir} /bin/bash -c "apt remove rsyslog && apt update && apt upgrade && apt install nano wget"
+echo "remove rsyslog and install nano fonts-wqy-microhei  fonts-wqy-zenhei language-pack-zh-hans and wget"
+chroot ${rootdir} /bin/bash -c "apt remove rsyslog && apt update && apt upgrade && apt install nano wget fonts-wqy-microhei  fonts-wqy-zenhei language-pack-zh-hans"
 echo "Now you can run '#chroot /compat/ubuntu/ /bin/bash' Into Ubuntu"
