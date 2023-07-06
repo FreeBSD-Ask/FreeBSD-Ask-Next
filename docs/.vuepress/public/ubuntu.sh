@@ -1,7 +1,5 @@
 #/bin/sh
 
-set -x
-
 rootdir=/compat/ubuntu
 baseurl="https://mirrors.ustc.edu.cn/ubuntu/"
 codename=jammy
