@@ -104,6 +104,19 @@ echo "/tmp ${rootdir}/tmp nullfs rw,late 0 0" >> /etc/fstab
 echo "/home ${rootdir}/home nullfs rw,late 0 0" >> /etc/fstab
 mount -al
 
-##################
-# dpkg --force-depends --force-confdef --force-confold -i /var/cache/apt/archives/*.deb
-##################
+chroot ${rootdir} /bin/bash -c "rm /var/cache/apt/archives/rsyslog*.deb"
+chroot ${rootdir} /bin/bash -c "DEBIAN_FRONTEND=noninteractive dpkg --force-depends --force-confdef --force-confold -i /var/cache/apt/archives/*.deb"
+chroot ${rootdir} /bin/bash -c "chmod 755 /tmp"
+
+echo "add ustc apt sources"
+echo "deb http://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe multiverse" > /compat/ubuntu/etc/apt/sources.list
+echo "deb-src http://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe multiverse" >> /compat/ubuntu/etc/apt/sources.list
+echo "deb http://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse" >> /compat/ubuntu/etc/apt/sources.list
+echo "deb-src http://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse" >> /compat/ubuntu/etc/apt/sources.list
+echo "deb http://mirrors.ustc.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse" >> /compat/ubuntu/etc/apt/sources.list
+echo "-src http://mirrors.ustc.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse" >> /compat/ubuntu/etc/apt/sources.list
+echo "deb http://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse" >> /compat/ubuntu/etc/apt/sources.list
+echo "deb-src http://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse" >> /compat/ubuntu/etc/apt/sources.list
+
+chroot ${rootdir} /bin/bash -c "apt update"
+
