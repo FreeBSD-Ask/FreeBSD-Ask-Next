@@ -145,3 +145,4 @@ case $answer in
 		echo "all done."
                 ;;
 esac
+echo "Now you can run '#chroot /compat/arch/ /bin/bash' Into ArchLinux"
