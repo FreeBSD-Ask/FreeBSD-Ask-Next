@@ -12,11 +12,11 @@ if [ "$(sysrc -n linux_enable)" = "NO" ]; then
         echo "linux module should be loaded. Continue?(N|y)"
         read answer
         case $answer in
-                [Nn][Oo]|[Nn]|"")
+                [Nn][Oo]|[Nn])
                         echo "linux module not loaded"
                         exit 1
                         ;;
-                [Yy][Ee][Ss]|[Yy])
+                *)
                         sysrc linux_enable=YES
                         ;;
         esac
@@ -29,11 +29,11 @@ if ! /usr/bin/which -s dbus-daemon;then
         echo "dbus-daemon not found. install it [N|y]"
         read  answer
         case $answer in
-            [Nn][Oo]|[Nn]|"")
+            [Nn][Oo]|[Nn])
                 echo "dbus not installed"
                 exit 2
                 ;;
-            [Yy][Ee][Ss]|[Yy])
+            *)
                 pkg install -y dbus
                 ;;
         esac
@@ -43,11 +43,11 @@ if [ "$(sysrc -n dbus_enable)" = "NO" ]; then
         echo "dbus should be enable. Continue?(N|y)"
         read answer
         case $answer in
-            [Nn][Oo]|[Nn]|"")
+            [Nn][Oo]|[Nn])
                         echo "dbus not running"
                         exit 2
                         ;;
-            [Yy][Ee][Ss]|[Yy])
+            *)
                         sysrc dbus_enable=YES
                         ;;
         esac
@@ -59,11 +59,11 @@ if ! /usr/bin/which -s debootstrap; then
         echo "debootstrap not found. install it? (N|y)"
         read  answer
         case $answer in
-            [Nn][Oo]|[Nn]|"")
+            [Nn][Oo]|[Nn])
                 echo "debootstap not installed"
                 exit 3
                 ;;
-            [Yy][Ee][Ss]|[Yy])
+            *)
                 pkg install -y debootstrap
                 ;;
         esac
@@ -77,11 +77,11 @@ if [ ! "$(sysrc -f /boot/loader.conf -qn nullfs_load)" = "YES" ]; then
         echo "nullfs_load should load. continue? (N|y)"
         read answer
         case $answer in
-            [Nn][Oo]|[Nn]|"")
+            [Nn][Oo]|[Nn])
                 echo "nullfs not load"
 				exit 4
                 ;;
-            [Yy][Ee][Ss]|[Yy])
+            *)
                 sysrc -f /boot/loader.conf nullfs_load=yes
                 ;;
         esac
