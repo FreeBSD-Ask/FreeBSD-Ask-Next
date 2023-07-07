@@ -23,7 +23,6 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.2-jie-freebsd-zhong-wen-she-qu-fa-zhan-gui-hua.md',
 		'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.3-jie-freebsd-de-bu-zu-zhi-chu.md',
 		'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.4-jie-freebsd-fa-hang-shuo-ming.md',
-	    	'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.5-jie-freebsd-shang-biao-bei-qiang-zhu-yi-shi-wei-jie-jue.md',
     ],
   },
   {
