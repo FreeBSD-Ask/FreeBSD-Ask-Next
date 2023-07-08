@@ -128,6 +128,7 @@ case $answer in
     chroot ${rootdir} /bin/bash -c "zypper ar -fcg https://mirrors.ustc.edu.cn/packman/suse/openSUSE_Leap_\$releasever/ USTC:PACKMAN"
     
     echo " I will install rpm replace rpm-ndb."
+    chroot ${rootdir} /bin/bash -c "zypper ref"
     chroot ${rootdir} /bin/bash -c "zypper download rpm"
     chroot ${rootdir} /bin/bash -c "zypper rm -y rpm-ndb"
     tar xvpf ${rootdir}/var/cache/zypp/packages/repo-oss/x86_64/rpm*.rpm  -C ${rootdir}
@@ -135,7 +136,7 @@ case $answer in
     chroot ${rootdir} /bin/bash -c "rpmdb --rebuilddb"
 
     echo " I will install opi nano and tar"   
-    chroot ${rootdir} /bin/bash -c "zypper update && zypper install -y opi nano tar"
+    chroot ${rootdir} /bin/bash -c "zypper ref && zypper install -y opi nano tar"
     
 
 
