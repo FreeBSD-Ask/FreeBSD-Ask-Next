@@ -57,7 +57,7 @@ service dbus start
 echo "now we will bootstrap opensuse"
 
 fetch ${url}
-mkdir ${rootdir}
+mkdir -p ${rootdir}
 tar zxvf opensuse-leap-image.x86_64-lxc.tar.xz -C ${rootdir} --numeric-owner
 
 
