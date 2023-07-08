@@ -1,7 +1,7 @@
 #/bin/sh
 
 rootdir=/compat/suse
-url="https://mirrors.ustc.edu.cn/opensuse/tumbleweed/appliances/opensuse-tumbleweed-image.x86_64-lxc.tar.xz"
+url="https://mirrors.ustc.edu.cn/opensuse/tumbleweed/appliances/opensuse-tumbleweed-dnf-image.x86_64-lxc-dnf.tar.xz"
 
 echo "begin to install archlinux ..."
 echo "check modules ..."
