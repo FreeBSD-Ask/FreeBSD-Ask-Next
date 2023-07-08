@@ -124,8 +124,8 @@ case $answer in
     chroot ${rootdir} /bin/bash -c "zypper in -y rpm"
     chroot ${rootdir} /bin/bash -c "rpmdb --rebuilddb"
 
-    echo " I will install opi nano and tar"   
-    chroot ${rootdir} /bin/bash -c "zypper ref && zypper install -y opi nano tar"
+    echo " I will install opi nano and tar，reinstall zypper"   
+    chroot ${rootdir} /bin/bash -c "zypper ref && zypper install -y zypper opi nano tar"
     
 
 
