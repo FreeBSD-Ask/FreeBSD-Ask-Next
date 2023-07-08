@@ -135,7 +135,7 @@ case $answer in
     chroot ${rootdir} /bin/bash -c "rpmdb --rebuilddb"
 
     echo " I will install opi nano and tar"   
-    chroot ${rootdir} /bin/bash -c "zypper update && zypper install -y opi nano tar"
+    chroot ${rootdir} /bin/bash -c "zypper update -y && zypper install -y opi nano tar"
     
 
 
