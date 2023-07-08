@@ -133,7 +133,9 @@ case $answer in
     tar xvpf ${rootdir}/var/cache/zypp/packages/repo-oss/x86_64/rpm*.rpm  -C ${rootdir}
     chroot ${rootdir} /bin/bash -c "zypper in -y rpm"
     chroot ${rootdir} /bin/bash -c "rpmdb --rebuilddb"
-    chroot ${rootdir} /bin/bash -c "zypper update && zypper install -y opi"
+
+    echo " I will install opi nano and tar"   
+    chroot ${rootdir} /bin/bash -c "zypper update && zypper install -y opi nano tar"
     
 
 
