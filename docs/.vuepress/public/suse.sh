@@ -116,9 +116,6 @@ case $answer in
 	[Yy][Ee][Ss]|[Yy]|"")
 		echo "nameserver 223.5.5.5" >> ${rootdir}/etc/resolv.conf
     
-    echo "I will add Packman sources from USTC mirrors."
-    chroot ${rootdir} /bin/bash -c "zypper ar -fcg https://mirrors.ustc.edu.cn/packman/suse/openSUSE_Leap_\$releasever/ USTC:PACKMAN"
-    
     echo " I will install rpm replace rpm-ndb."
     chroot ${rootdir} /bin/bash -c "zypper ref"
     chroot ${rootdir} /bin/bash -c "zypper download rpm"
