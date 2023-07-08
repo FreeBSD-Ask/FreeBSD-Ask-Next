@@ -1,7 +1,7 @@
 #/bin/sh
 
 rootdir=/compat/suse
-url="https://mirrors.ustc.edu.cn/opensuse/distribution/leap/15.5/appliances/opensuse-leap-image.x86_64-lxc.tar.xz"
+url="https://mirrors.ustc.edu.cn/opensuse/distribution/leap/15.5/appliances/opensuse-leap-dnf-image.x86_64-lxc-dnf.tar.xz"
 
 echo "begin to install archlinux ..."
 echo "check modules ..."
@@ -117,17 +117,11 @@ case $answer in
 		echo "nameserver 223.5.5.5" >> ${rootdir}/etc/resolv.conf
     
     echo " I will install rpm replace rpm-ndb."
-    chroot ${rootdir} /bin/bash -c "zypper ref"
-    chroot ${rootdir} /bin/bash -c "zypper download rpm"
-    chroot ${rootdir} /bin/bash -c "rpm -e --nodeps rpm-ndb"
-    tar xvpf ${rootdir}/var/cache/zypp/packages/repo-oss/x86_64/rpm*.rpm  -C ${rootdir}
-    chroot ${rootdir} /bin/bash -c "zypper in -y rpm"
-    chroot ${rootdir} /bin/bash -c "rpmdb --rebuilddb"
+    chroot ${rootdir} /bin/bash -c "dnf install -y zypper"
 
     echo " I will install opi nano and tar，reinstall zypper"   
-    chroot ${rootdir} /bin/bash -c "zypper ref && zypper install -y zypper opi nano tar"
+    chroot ${rootdir} /bin/bash -c "zypper ref && zypper install -y  opi nano tar vim"
     
-
 
     echo "all done."
     echo "Now you can run '#chroot /compat/suse/ /bin/bash' Into Opensuse"
