@@ -115,15 +115,6 @@ case $answer in
 		;;
 	[Yy][Ee][Ss]|[Yy]|"")
 		echo "nameserver 223.5.5.5" >> ${rootdir}/etc/resolv.conf
-  
-    echo " I will change sources to USTC mirrors"
-    chroot ${rootdir} /bin/bash -c "zypper mr -da"
-    chroot ${rootdir} /bin/bash -c "zypper ar -fcg https://mirrors.ustc.edu.cn/opensuse/distribution/leap/\$releasever/repo/oss USTC:OSS"
-    chroot ${rootdir} /bin/bash -c "zypper ar -fcg https://mirrors.ustc.edu.cn/opensuse/distribution/leap/\$releasever/repo/non-oss USTC:NON-OSS"
-    chroot ${rootdir} /bin/bash -c "zypper ar -fcg https://mirrors.ustc.edu.cn/opensuse/update/leap/\$releasever/oss USTC:UPDATE-OSS"
-    chroot ${rootdir} /bin/bash -c "zypper ar -fcg https://mirrors.ustc.edu.cn/opensuse/update/leap/\$releasever/non-oss USTC:UPDATE-NON-OSS"
-    chroot ${rootdir} /bin/bash -c "zypper ar -fcg https://mirrors.ustc.edu.cn/opensuse/update/leap/\$releasever/sle USTC:UPDATE-SLE"
-    chroot ${rootdir} /bin/bash -c "zypper ar -fcg https://mirrors.ustc.edu.cn/opensuse/update/leap/\$releasever/backports USTC:UPDATE-BACKPORTS"
     
     echo "I will add Packman sources from USTC mirrors."
     chroot ${rootdir} /bin/bash -c "zypper ar -fcg https://mirrors.ustc.edu.cn/packman/suse/openSUSE_Leap_\$releasever/ USTC:PACKMAN"
