@@ -119,7 +119,7 @@ case $answer in
     echo " I will install rpm replace rpm-ndb."
     chroot ${rootdir} /bin/bash -c "zypper ref"
     chroot ${rootdir} /bin/bash -c "zypper download rpm"
-    chroot ${rootdir} /bin/bash -c "zypper rm -y rpm-ndb"
+    chroot ${rootdir} /bin/bash -c "rpm -e --nodeps rpm-ndb"
     tar xvpf ${rootdir}/var/cache/zypp/packages/repo-oss/x86_64/rpm*.rpm  -C ${rootdir}
     chroot ${rootdir} /bin/bash -c "zypper in -y rpm"
     chroot ${rootdir} /bin/bash -c "rpmdb --rebuilddb"
