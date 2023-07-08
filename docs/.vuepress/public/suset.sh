@@ -115,9 +115,6 @@ case $answer in
 		;;
 	[Yy][Ee][Ss]|[Yy]|"")
 		echo "nameserver 223.5.5.5" >> ${rootdir}/etc/resolv.conf
-
-    echo " I will install opi nano tar and vim"   
-    chroot ${rootdir} /bin/bash -c "dnf update && dnf install -y  opi nano tar vim"
     
 
     echo "all done."
