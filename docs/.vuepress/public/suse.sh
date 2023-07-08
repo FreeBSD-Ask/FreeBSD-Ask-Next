@@ -57,7 +57,8 @@ service dbus start
 echo "now we will bootstrap opensuse"
 
 fetch ${url}
-tar zxvf opensuse-leap-image.x86_64-lxc.tar.xz -C /compat/suse --numeric-owner
+mkdir ${rootdir}
+tar zxvf opensuse-leap-image.x86_64-lxc.tar.xz -C ${rootdir} --numeric-owner
 
 
 if [ ! "$(sysrc -f /boot/loader.conf -qn nullfs_load)" = "YES" ]; then
