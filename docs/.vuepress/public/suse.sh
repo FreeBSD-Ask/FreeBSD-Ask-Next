@@ -1,7 +1,7 @@
 #/bin/sh
 
 rootdir=/compat/suse
-url="https://mirrors.ustc.edu.cn/opensuse/distribution/leap/15.5/appliances/opensuse-leap-dnf-image.x86_64-lxc-dnf.tar.xz"
+url="https://mirrors.ustc.edu.cn/opensuse/distribution/openSUSE-current/appliances/opensuse-leap-dnf-image.x86_64-lxc-dnf.tar.xz"
 
 echo "begin to install archlinux ..."
 echo "check modules ..."
