@@ -3,7 +3,7 @@
 rootdir=/compat/suse
 url="https://mirrors.ustc.edu.cn/opensuse/tumbleweed/appliances/opensuse-tumbleweed-dnf-image.x86_64-lxc-dnf.tar.xz"
 
-echo "begin to install archlinux ..."
+echo "begin to install OpenSUSE Tumbleweed..."
 echo "check modules ..."
 
 # check linux module
