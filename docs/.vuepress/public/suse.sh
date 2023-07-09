@@ -3,7 +3,7 @@
 rootdir=/compat/suse
 url="https://mirrors.ustc.edu.cn/opensuse/distribution/openSUSE-current/appliances/opensuse-leap-dnf-image.x86_64-lxc-dnf.tar.xz"
 
-echo "begin to install archlinux ..."
+echo "begin to install latest Opensuse Leap ..."
 echo "check modules ..."
 
 # check linux module
