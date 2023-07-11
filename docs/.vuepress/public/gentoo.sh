@@ -122,8 +122,22 @@ case $answer in
 		echo "nameserver 223.5.5.5" >> ${rootdir}/etc/resolv.conf
     
 
+
+echo "Now write MAKEOPTS  GENTOO_MIRRORS FEATURES in /compat/gentoo/etc/portage/make.conf"		
+echo "MAKEOPTS=\"-j2\"" >> /${rootdir}/etc/portage/make.conf
+echo "GENTOO_MIRRORS=\"https://mirrors.ustc.edu.cn/gentoo\"" >> ${rootdir}/etc/portage/make.conf
+echo "FEATURES=\"-ipc-sandbox -mount-sandbox -network-sandbox -pid-sandbox -xattr -sandbox -usersandbox\"" >> ${rootdir}/etc/portage/make.conf
+
+echo "Now setting soft sources"	
+mkdir -p ${rootdir}/etc/portage/repos.conf
+cp ${rootdir}/usr/share/portage/config/repos.conf ${rootdir}/etc/portage/repos.conf/gentoo.conf 
+sed -i 's/rsync.gentoo.org/mirrors.tuna.tsinghua.edu.cn/' ${rootdir}/etc/portage/repos.conf/gentoo.conf
+
+echo " I will run emerge-webrsync"   
+chroot ${rootdir} /bin/bash -c "emerge-webrsync"
+    
     echo "all done."
     echo "Now you can run '#chroot /compat/gentoo/ /bin/bash' Into Opensuse"
-		
+
                 ;;
 esac
