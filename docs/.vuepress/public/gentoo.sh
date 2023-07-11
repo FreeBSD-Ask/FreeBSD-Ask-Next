@@ -95,7 +95,7 @@ echo "/tmp ${rootdir}/tmp nullfs rw,late 0 0" >> /etc/fstab
 echo "/home ${rootdir}/home nullfs rw,late 0 0" >> /etc/fstab
 mount -al
 
-echo "for opensuse,we should change 'compat.linux.osrelease'. continue? (Y|n)"
+echo "for Gentoo Linux, we should change 'compat.linux.osrelease' to upgrade Linux kernel version, continue? (Y|n)"
 read answer
 case $answer in
 	[Nn][Oo]|[Nn])
