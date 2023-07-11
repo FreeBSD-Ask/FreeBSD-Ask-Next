@@ -6,9 +6,9 @@ gentoodownload=$(echo |sed -n '3p'  latest-stage3-amd64-systemd.txt|awk -F ' ' '
 rm latest-stage3-amd64-systemd.txt
 
 
-url="https://mirrors.ustc.edu.cn/gentoo/releases/amd64/autobuilds/$gentoodownload"
+url="https://mirrors.ustc.edu.cn/gentoo/releases/amd64/autobuilds/"
 
-echo "begin to install latest Opensuse Leap ..."
+echo "Begin to install latest Gentoo Linux ..."
 echo "check modules ..."
 
 # check linux module
@@ -61,9 +61,9 @@ service dbus start
 
 echo "now we will bootstrap opensuse"
 
-fetch ${url}
+fetch ${url}/$gentoodownload
 mkdir -p ${rootdir}
-tar zxvf opensuse-leap-dnf-image*.tar.xz -C ${rootdir} --numeric-owner
+tar zxvf stage3-amd64-systemd*.tar.xz -C ${rootdir} --numeric-owner
 
 
 if [ ! "$(sysrc -f /boot/loader.conf -qn nullfs_load)" = "YES" ]; then
@@ -120,13 +120,10 @@ case $answer in
 		;;
 	[Yy][Ee][Ss]|[Yy]|"")
 		echo "nameserver 223.5.5.5" >> ${rootdir}/etc/resolv.conf
-
-    echo " I will install opi nano tar and vim"   
-    chroot ${rootdir} /bin/bash -c "dnf update && dnf install -y  opi nano tar vim"
     
 
     echo "all done."
-    echo "Now you can run '#chroot /compat/suse/ /bin/bash' Into Opensuse"
+    echo "Now you can run '#chroot /compat/gentoo/ /bin/bash' Into Opensuse"
 		
                 ;;
 esac
