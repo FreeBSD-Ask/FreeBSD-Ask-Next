@@ -131,7 +131,7 @@ echo "FEATURES=\"-ipc-sandbox -mount-sandbox -network-sandbox -pid-sandbox -xatt
 echo "Now setting soft sources --Using TUNA mirror for emerge-webrsync"	
 mkdir -p ${rootdir}/etc/portage/repos.conf
 cp ${rootdir}/usr/share/portage/config/repos.conf ${rootdir}/etc/portage/repos.conf/gentoo.conf 
-sed -i 's/rsync.gentoo.org/mirrors.tuna.tsinghua.edu.cn/' ${rootdir}/etc/portage/repos.conf/gentoo.conf
+sed -i "" 's/rsync.gentoo.org/mirrors.tuna.tsinghua.edu.cn/' ${rootdir}/etc/portage/repos.conf/gentoo.conf
 
 echo " I will run emerge-webrsync"   
 chroot ${rootdir} /bin/bash -c "emerge-webrsync"
