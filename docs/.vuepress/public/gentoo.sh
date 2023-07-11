@@ -123,12 +123,12 @@ case $answer in
     
 
 
-echo "Now write MAKEOPTS  GENTOO_MIRRORS FEATURES in /compat/gentoo/etc/portage/make.conf"		
+echo "Now write MAKEOPTS FEATURES in /compat/gentoo/etc/portage/make.conf -- using USTC mirrors for GENTOO_MIRRORS"		
 echo "MAKEOPTS=\"-j2\"" >> /${rootdir}/etc/portage/make.conf
 echo "GENTOO_MIRRORS=\"https://mirrors.ustc.edu.cn/gentoo\"" >> ${rootdir}/etc/portage/make.conf
 echo "FEATURES=\"-ipc-sandbox -mount-sandbox -network-sandbox -pid-sandbox -xattr -sandbox -usersandbox\"" >> ${rootdir}/etc/portage/make.conf
 
-echo "Now setting soft sources"	
+echo "Now setting soft sources --Using TUNA mirror for emerge-webrsync"	
 mkdir -p ${rootdir}/etc/portage/repos.conf
 cp ${rootdir}/usr/share/portage/config/repos.conf ${rootdir}/etc/portage/repos.conf/gentoo.conf 
 sed -i 's/rsync.gentoo.org/mirrors.tuna.tsinghua.edu.cn/' ${rootdir}/etc/portage/repos.conf/gentoo.conf
