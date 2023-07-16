@@ -59,7 +59,7 @@ echo "now we will bootstrap opensuse"
 fetch ${url}
 mkdir -p ${rootdir}
 tar zxvf opensuse*.tar.xz -C ${rootdir} --numeric-owner
-
+rm opensuse-tumbleweed-dnf-image.x86_64-lxc-dnf.tar.xz
 
 if [ ! "$(sysrc -f /boot/loader.conf -qn nullfs_load)" = "YES" ]; then
         echo "nullfs_load should load. continue? (Y|n)"
