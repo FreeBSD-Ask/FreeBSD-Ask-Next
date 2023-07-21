@@ -128,7 +128,7 @@ echo "continue?[Y|n]"
 read answer
 case $answer in
 	[Nn][Oo]|[Nn])
-		echo "set your opensuse by yourself.bye!"
+		echo "set your deepin by yourself.bye!"
 		exit 0
 		;;
 	[Yy][Ee][Ss]|[Yy]|"")
