@@ -224,6 +224,7 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-16-zhang-fu-wu-qi/di-16.12-jie-shi-jian-fu-wu.md',
 		'/di-16-zhang-fu-wu-qi/di-16.13-jie-wildfly.md',
 	    	'/di-16-zhang-fu-wu-qi/di-16.14-jie-slurm.md',
+	    	'/di-16-zhang-fu-wu-qi/di-16.15-jie-minio-dui-xiang-cun-chu-fu-wu.md',
     ],
   },
   {
