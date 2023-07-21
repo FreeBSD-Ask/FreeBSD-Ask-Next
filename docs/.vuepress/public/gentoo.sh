@@ -137,7 +137,7 @@ echo " I will run emerge-webrsync"
 chroot ${rootdir} /bin/bash -c "emerge-webrsync"
     
     echo "all done."
-    echo "Now you can run '#chroot /compat/gentoo/ /bin/bash' Into Opensuse"
+    echo "Now you can run '#chroot /compat/gentoo/ /bin/bash' Into Gentoo"
 
                 ;;
 esac
