@@ -349,8 +349,6 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-26-zhang-openbsd/di-26.3-jie-huan-yuan.md',
 		'/di-26-zhang-openbsd/di-26.4-jie-bao-guan-li-qi.md',
 		'/di-26-zhang-openbsd/di-26.5-jie-zhuo-mian-yu-qi-ta-ruan-jian.md',
-	    	'/di-28-zhang-dragonflybsd/di-28.2-jie-huan-yuan-yu-bao-guan-li-qi.md',
-	    	'/di-28-zhang-dragonflybsd/di-28.3-jie-zhuo-mian-yu-qi-ta-ruan-jian.md',
     ],
   },
   {
@@ -367,6 +365,8 @@ export const sideBarConfig: SidebarConfig = [
     children: [
 		'/di-28-zhang-dragonflybsd/di-28.0-jie-gai-shu.md',
 		'/di-28-zhang-dragonflybsd/di-28.1-jie-an-zhuang-yu-pei-zhi.md',
+	    	'/di-28-zhang-dragonflybsd/di-28.2-jie-huan-yuan-yu-bao-guan-li-qi.md',
+	    	'/di-28-zhang-dragonflybsd/di-28.3-jie-zhuo-mian-yu-qi-ta-ruan-jian.md',
     ],
   },
   {
