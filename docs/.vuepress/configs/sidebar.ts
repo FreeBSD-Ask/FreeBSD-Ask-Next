@@ -238,6 +238,7 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-17-zhang-wang-luo-fu-wu-qi/di-17.6-jie-typecho.md',
 		'/di-17-zhang-wang-luo-fu-wu-qi/di-17.7-jie-ssl-pei-zhi.md',
 		'/di-17-zhang-wang-luo-fu-wu-qi/di-17.8-jie-postgresql-yu-pgadmin4.md',
+	    	'/di-17.9-jie-telegraf-jia-influxdb-jia-grafana-jian-kong-ping-tai.md',
     ],
   },
   {
