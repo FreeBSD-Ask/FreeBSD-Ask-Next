@@ -273,6 +273,7 @@ export const sideBarConfig: SidebarConfig = [
 	    	'/di-19-zhang-wen-xue-gu-shi/di-19.15-jie-wu-xiang-he-chu.md',
 	    	'/di-19-zhang-wen-xue-gu-shi/di-19.16-jie-zhe-xue-de-xue-xi.md',
 	    	'/di-19-zhang-wen-xue-gu-shi/di-19.17-jie-za-ji.md',
+	    	'/di-19-zhang-wen-xue-gu-shi/di-19.18-jie-wang-luo-an-quan-zhong-de-zhu-ti-yin-si-quan-yu-zhu-ti-xuan-ze-de-zi-you-tao-lun-yi-wan.md',
     ],
   },
   {
