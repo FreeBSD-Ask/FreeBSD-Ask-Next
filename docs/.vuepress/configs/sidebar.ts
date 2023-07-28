@@ -16,7 +16,7 @@ export const sideBarConfig: SidebarConfig = [
     children: ['/SUMMARY.md'],
   },
   {
-    text: '第0章 FreeBSD 中文社区',
+    text: '第 0 章 FreeBSD 中文社区',
     children: [
 		'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.0-jie-she-qu-tong-zhi-gun-dong-geng-xin.md',	
 	  	'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.1-jie-freebsd-faq.md',
@@ -28,7 +28,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第1章 走近 FreeBSD',
+    text: '第 1 章 走近 FreeBSD',
     children: [
 		'/di-1-zhang-zou-jin-freebsd/di-1.1-jie-shi-mo-shi-unix.md',
 		'/di-1-zhang-zou-jin-freebsd/di-1.2-jie-shi-mo-shi-unixlike.md',
@@ -43,7 +43,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第2章 安装 FreeBSD',
+    text: '第 2 章 安装 FreeBSD',
     children: [
 		'/di-2-zhang-an-zhuang-freebsd/di-2.0-jie-tu-jie-an-zhuang.md',
 		'/di-2-zhang-an-zhuang-freebsd/di-2.1-jie-san-zhong-xu-ni-ji-yu-freebsd-ban-ben-bi-jiao.md',
@@ -61,7 +61,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第3章 软件源及包管理器',
+    text: '第 3 章 软件源及包管理器',
     children: [
 		'/di-3-zhang-ruan-jian-yuan-ji-bao-guan-li-qi/di-3.0-jie-bao-guan-li-qi-gai-shu.md',
 		'/di-3-zhang-ruan-jian-yuan-ji-bao-guan-li-qi/di-3.1-jie-freebsd-jing-xiang-zhan-xian-zhuang.md',
@@ -73,7 +73,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第4章 桌面安装',
+    text: '第 4 章 桌面安装',
     children: [
 		'/di-4-zhang-zhuo-mian-an-zhuang/di-4.0-jie-gai-shu.md',
 		'/di-4-zhang-zhuo-mian-an-zhuang/di-4.1-jie-an-zhuang-xian-ka-qu-dong-ji-xorg-bi-kan.md',
@@ -90,7 +90,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第5章 输入法及常用软件',
+    text: '第 5 章 输入法及常用软件',
     children: [
 	    	'/di-5-zhang-shu-ru-fa-ji-chang-yong-ruan-jian/di-5.0-jie-shu-ru-fa-yu-huan-jing-bian-liang.md',
 		'/di-5-zhang-shu-ru-fa-ji-chang-yong-ruan-jian/di-5.1-jie-fcitx-shu-ru-fa-kuang-jia.md',
@@ -105,7 +105,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第6章 文件系统与磁盘管理',
+    text: '第 6 章 文件系统与磁盘管理',
     children: [
 		'/di-6-zhang-wen-jian-xi-tong-yu-ci-pan-guan-li/di-6.1-jie-ufs.md',
 		'/di-6-zhang-wen-jian-xi-tong-yu-ci-pan-guan-li/di-6.2-jie-zfs.md',
@@ -116,7 +116,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第7章 VPN 与代理',
+    text: '第 7 章 VPN 与代理',
     children: [
 		'/di-7-zhang-vpn-yu-dai-li/di-7.1-jie-http-dai-li.md',
 		'/di-7-zhang-vpn-yu-dai-li/di-7.2-jie-v2ray.md',
@@ -126,7 +126,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第8章 用户与权限',
+    text: '第 8 章 用户与权限',
     children: [
 		'/di-8-zhang-yong-hu-yu-quan-xian/di-8.1-jie-sudo.md',
 		'/di-8-zhang-yong-hu-yu-quan-xian/di-8.2-jie-tian-jia-yong-hu.md',
@@ -135,7 +135,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第9章 Jail',
+    text: '第 9 章 Jail',
     children: [
 		'/di-9-zhang-jail/di-9.1-jie-jail-yu-docker-de-bi-jiao.md',
 		'/di-9-zhang-jail/di-9.2-jie-jail-xiang-guan-shu-yu.md',
@@ -146,7 +146,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第10章 虚拟化',
+    text: '第 10 章 虚拟化',
     children: [
 		'/di-10-zhang-xu-ni-hua/di-10.1-jie-xu-ni-hua-jian-jie.md',
 		'/di-10-zhang-xu-ni-hua/di-10.2-jie-an-zhuang-virtual-box.md',
@@ -158,7 +158,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第11章 更新与升级 FreeBSD',
+    text: '第 11 章 更新与升级 FreeBSD',
     children: [
 		'/di-11-zhang-geng-xin-yu-sheng-ji-freebsd/di-11.1-jie-tong-guo-freebsdupdate-geng-xin.md',
 		'/di-11-zhang-geng-xin-yu-sheng-ji-freebsd/di-11.2-jie-tong-guo-yuan-dai-ma-geng-xin.md',
@@ -166,7 +166,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第12章 GEOM 存储框架',
+    text: '第 12 章 GEOM 存储框架',
     children: [
 		'/di-12-zhang-geom-cun-chu-kuang-jia/di-12.1-jie-gai-shu.md',
 		'/di-12-zhang-geom-cun-chu-kuang-jia/di-12.2-jie-raid-0.md',
@@ -180,7 +180,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第13章 DTrace',
+    text: '第 13 章 DTrace',
     children: [
 		'/di-13-zhang-dtrace/di-13.1-jie-gai-shu.md',
 		'/di-13-zhang-dtrace/di-13.2-jie-kai-qi-dtrace.md',
@@ -188,7 +188,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第14章 网络管理',
+    text: '第 14 章 网络管理',
     children: [
 		'/di-14-zhang-wang-luo-guan-li/di-14.1-jie-ppp-bo-hao.md',
 		'/di-14-zhang-wang-luo-guan-li/di-14.2-jie-wifi.md',
@@ -201,7 +201,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第15章 FreeBSD 防火墙',
+    text: '第 15 章 FreeBSD 防火墙',
     children: [
 		'/di-15-zhang-freebsd-fang-huo-qiang/di-15.1-jie-wang-luo-can-shu-pei-zhi-ming-ling.md',
 		'/di-15-zhang-freebsd-fang-huo-qiang/di-15.2-jie-pf.md',
@@ -210,7 +210,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第16章 服务器',
+    text: '第 16 章 服务器',
     children: [
 		'/di-16-zhang-fu-wu-qi/di-16.1-jie-ftp-fu-wu-qi.md',
 		'/di-16-zhang-fu-wu-qi/di-16.2-jie-dhcp-fu-wu-qi.md',
@@ -230,7 +230,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第17章 网络服务器',
+    text: '第 17 章 网络服务器',
     children: [
 		'/di-17-zhang-wang-luo-fu-wu-qi/di-17.1-jie-apache.md',
 		'/di-17-zhang-wang-luo-fu-wu-qi/di-17.2-jie-nginx.md',
@@ -244,7 +244,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第18章 树莓派与嵌入式',
+    text: '第 18 章 树莓派与嵌入式',
     children: [
 		'/di-18-zhang-shu-mei-pai-yu-qian-ru-shi/di-18.1-jie-shu-mei-pai-de-jian-jie.md',
 		'/di-18-zhang-shu-mei-pai-yu-qian-ru-shi/di-18.2-jie-xi-tong-an-zhuang.md',
@@ -254,7 +254,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第19章 文学故事',
+    text: '第 19 章 文学故事',
     children: [
 		'/di-19-zhang-wen-xue-gu-shi/di-19.1-jie-wo-yu-freebsd-de-gu-shi.md',
 		'/di-19-zhang-wen-xue-gu-shi/di-19.2-jie-freebsd-yu-mao-xuan-ze-1-de-sheng-huo.md',
@@ -276,7 +276,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第20章 娱乐与教育',
+    text: '第 20 章 娱乐与教育',
     children: [
 		'/di-20-zhang-yu-le-yu-jiao-yu/di-20.1-jie-you-xi.md',
 		'/di-20-zhang-yu-le-yu-jiao-yu/di-20.2-jie-yin-shi-pin-bo-fang-qi.md',
@@ -286,7 +286,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第21章 内核',
+    text: '第 21 章 内核',
     children: [
 		'/di-21-zhang-nei-he/di-21.1-jie-huo-qu-freebsd-nei-he-yuan-ma.md',
 		'/di-21-zhang-nei-he/di-21.2-jie-xiu-gai-nei-he-yuan-ma.md',
@@ -295,7 +295,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第22章 编程与开发',
+    text: '第 22 章 编程与开发',
     children: [
 		'/di-22-zhang-bian-cheng-yu-kai-fa/di-22.0-jie-ru-he-ding-yue-freebsd-de-you-jian-lie-biao.md',
 		'/di-22-zhang-bian-cheng-yu-kai-fa/di-22.1-jie-ru-he-bao-gao-bug.md',
@@ -313,7 +313,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第23章 引导与恢复',
+    text: '第 23 章 引导与恢复',
     children: [
 		'/di-23-zhang-yin-dao-yu-hui-fu/di-23.1-jie-hui-fu-mo-shi-yu-mi-ma-zhong-zhi.md',
 		'/di-23-zhang-yin-dao-yu-hui-fu/di-23.2-jie-freebsd-duo-ying-pan-efi-yin-dao-tong-yi.md',
@@ -323,7 +323,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第24章 FreeBSD 特色',
+    text: '第 24 章 FreeBSD 特色',
     children: [
 		'/di-24-zhang-freebsd-te-se/di-24.1-jie-bsd-init-guan-li-fu-wu.md',
 		'/di-24-zhang-freebsd-te-se/di-24.2-jie-freebsd-mu-lu-jie-gou.md',
@@ -334,7 +334,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第25章 系统设计与分析',
+    text: '第 25 章 系统设计与分析',
     children: [
 		'/di-25-zhang-xi-tong-she-ji-yu-fen-xi/di-25.1-jie-freebsd-she-ji-gai-shu.md',
 		'/di-25-zhang-xi-tong-she-ji-yu-fen-xi/di-25.2-jie-nei-he.md',
@@ -345,7 +345,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第26章 OpenBSD',
+    text: '第 26 章 OpenBSD',
     children: [
 		'/di-26-zhang-openbsd/di-26.0-jie-gai-shu.md',
 		'/di-26-zhang-openbsd/di-26.1-jie-an-zhuang.md',
@@ -356,7 +356,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第27章 NetBSD',
+    text: '第 27 章 NetBSD',
     children: [
 		'/di-27-zhang-netbsd/di-27.0-jie-gai-shu.md',
 		'/di-27-zhang-netbsd/di-27.1-jie-an-zhuang-yu-pei-zhi.md',
@@ -365,7 +365,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第28章 DragonFlyBSD',
+    text: '第 28 章 DragonFlyBSD',
     children: [
 		'/di-28-zhang-dragonflybsd/di-28.0-jie-gai-shu.md',
 		'/di-28-zhang-dragonflybsd/di-28.1-jie-an-zhuang-yu-pei-zhi.md',
@@ -374,7 +374,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
   {
-    text: '第29章 桌面高级进阶',
+    text: '第 29 章 桌面高级进阶',
     children: [
 		'/di-29-zhang-zhuo-mian-gao-ji-jin-jie/di-29.0-jie-chuang-kou-guan-li-qi-yu-zhuo-mian-de-qu-bie-yu-lian-xi.md',
 		'/di-29-zhang-zhuo-mian-gao-ji-jin-jie/di-29.1-jie-an-zhuang-i3wm.md',
@@ -384,7 +384,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
     {
-    text: '第30章 Linux 兼容层',
+    text: '第 30 章 Linux 兼容层',
     children: [
 		'/di-30-zhang-linux-jian-rong-ceng/di-30.1-jie-linux-jian-rong-ceng-shi-xian.md',
 		'/di-30-zhang-linux-jian-rong-ceng/di-30.2-jie-linux-jian-rong-ceng-ji-yu-centos-yuan-sheng.md',
@@ -401,7 +401,7 @@ export const sideBarConfig: SidebarConfig = [
     ],
   },
  {
-    text: '第31章 TwinCAT/BSD',
+    text: '第 31 章 TwinCAT/BSD',
     children: [
 		'/di-31-zhang-twincatbsd/di-31.1-jie-jian-jie.md',
 		'/di-31-zhang-twincatbsd/di-31.2-jie-xi-tong-an-zhuang-yu-ji-ben-pei-zhi.md',
