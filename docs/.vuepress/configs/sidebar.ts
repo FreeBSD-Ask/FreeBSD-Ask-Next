@@ -23,6 +23,7 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.2-jie-freebsd-zhong-wen-she-qu-fa-zhan-gui-hua.md',
 		'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.3-jie-freebsd-de-bu-zu-zhi-chu.md',
 		'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.4-jie-freebsd-fa-hang-shuo-ming.md',
+	    	'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.5-jie-freebsd-ji-du-bao-gao.md',
     ],
   },
   {
@@ -238,7 +239,7 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-17-zhang-wang-luo-fu-wu-qi/di-17.6-jie-typecho.md',
 		'/di-17-zhang-wang-luo-fu-wu-qi/di-17.7-jie-ssl-pei-zhi.md',
 		'/di-17-zhang-wang-luo-fu-wu-qi/di-17.8-jie-postgresql-yu-pgadmin4.md',
-	    	'/di-17.9-jie-telegraf-jia-influxdb-jia-grafana-jian-kong-ping-tai.md',
+	    	'/di-17-zhang-wang-luo-fu-wu-qi/di-17.9-jie-telegraf+influxdb+grafana-jian-kong-ping-tai.md',
     ],
   },
   {
