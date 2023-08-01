@@ -163,6 +163,7 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-11-zhang-geng-xin-yu-sheng-ji-freebsd/di-11.1-jie-tong-guo-freebsdupdate-geng-xin.md',
 		'/di-11-zhang-geng-xin-yu-sheng-ji-freebsd/di-11.2-jie-tong-guo-yuan-dai-ma-geng-xin.md',
 		'/di-11-zhang-geng-xin-yu-sheng-ji-freebsd/di-11.3-jie-pi-liang-bu-shu.md',
+	    	'/di-11-zhang-geng-xin-yu-sheng-ji-freebsd/di-11.4-jie-shi-yong-pkgbase-geng-xin.md',
     ],
   },
   {
