@@ -413,4 +413,13 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-31-zhang-twincatbsd/di-31.4-jie-gu-zhang-pai-chu.md',
     ],
   },	
+{
+    text: '第 32 章 TrueNAS',
+    children: [
+		'/di-32-zhang-truenas/di-32.1-jie-truenas-jian-jie.md',
+		'/di-32-zhang-truenas/di-32.2-jie-truenas-an-zhuang.md',
+		'/di-32-zhang-truenas/di-32.3-jie-truenas-pei-zhi-yu-tiao-you.md',
+		'/di-32-zhang-truenas/di-32.4-jie-truenas-gu-zhang-pai-chu.md',
+    ],
+  },	
 ];
