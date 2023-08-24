@@ -102,6 +102,18 @@ echo "/tmp ${rootdir}/tmp nullfs rw,late 0 0" >> /etc/fstab
 echo "/home ${rootdir}/home nullfs rw,late 0 0" >> /etc/fstab
 mount -al
 
+echo "for archlinux,we should change 'compat.linux.osrelease'. continue? (Y|n)"
+read answer
+case $answer in
+	[Nn][Oo]|[Nn])
+		echo "close to success"
+		exit 4
+		;;
+	[Yy][Ee][Ss]|[Yy]|"")
+		echo "compat.linux.osrelease=6.2.10" >> /etc/sysctl.conf
+		sysctl compat.linux.osrelease=6.2.10
+                ;;
+esac
 
 echo "add ustc apt sources"
 echo "deb http://mirrors.ustc.edu.cn/debian stable main contrib non-free non-free-firmware" > /compat/ubuntu/etc/apt/sources.list
