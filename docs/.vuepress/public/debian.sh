@@ -128,6 +128,6 @@ echo "Acquire::http::Pipeline-Depth \"0\";" > /compat/debian/etc/apt/apt.conf.d/
 echo 'APT::Cache-Start "100000000";' | tee /compat/debian/etc/apt/apt.conf.d/70debcoebconf
 
 
-echo "remove rsyslog and install nano fonts-wqy-microhei  fonts-wqy-zenhei and wget"
-chroot ${rootdir} /bin/bash -c " apt update && apt upgrade && apt install nano wget fonts-wqy-microhei  fonts-wqy-zenhei"
+echo "install nano fonts-wqy-microhei  fonts-wqy-zenhei and wget"
+chroot ${rootdir} /bin/bash -c " apt update && apt --fix-broken install -y && apt upgrade && apt install nano wget fonts-wqy-microhei  fonts-wqy-zenhei -y"
 echo "Now you can run '#chroot /compat/debian/ /bin/bash' Into debian"
