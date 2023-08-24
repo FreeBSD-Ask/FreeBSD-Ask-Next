@@ -123,6 +123,7 @@ echo "# deb-src http://mirrors.ustc.edu.cn/debian stable-updates main contrib no
 echo "# deb http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free non-free-firmware" >> /compat/debian/etc/apt/sources.list
 echo "# deb-src http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free non-free-firmware" >> /compat/debian/etc/apt/sources.list
 echo "Acquire::http::Pipeline-Depth \"0\";" > /compat/debian/etc/apt/apt.conf.d/99nopipelining
+echo 'APT::Cache-Start "100000000";' | tee /compat/debian/etc/apt/apt.conf.d/70debcoebconf
 
 
 echo "remove rsyslog and install nano fonts-wqy-microhei  fonts-wqy-zenhei and wget"
