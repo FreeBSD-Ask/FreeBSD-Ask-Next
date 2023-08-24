@@ -116,14 +116,14 @@ case $answer in
 esac
 
 echo "add ustc apt sources"
-echo "deb http://mirrors.ustc.edu.cn/debian stable main contrib non-free non-free-firmware" > /compat/ubuntu/etc/apt/sources.list
-echo "# deb-src http://mirrors.ustc.edu.cn/debian stable main contrib non-free non-free-firmware" >> /compat/ubuntu/etc/apt/sources.list
-echo "deb http://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free non-free-firmware" >> /compat/ubuntu/etc/apt/sources.list
-echo "# deb-src http://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free non-free-firmware" >> /compat/ubuntu/etc/apt/sources.list
-echo "# deb http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free non-free-firmware" >> /compat/ubuntu/etc/apt/sources.list
-echo "# deb-src http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free non-free-firmware" >> /compat/ubuntu/etc/apt/sources.list
+echo "deb http://mirrors.ustc.edu.cn/debian stable main contrib non-free non-free-firmware" > /compat/debian/etc/apt/sources.list
+echo "# deb-src http://mirrors.ustc.edu.cn/debian stable main contrib non-free non-free-firmware" >> /compat/debian/etc/apt/sources.list
+echo "deb http://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free non-free-firmware" >> /compat/debian/etc/apt/sources.list
+echo "# deb-src http://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free non-free-firmware" >> /compat/debian/etc/apt/sources.list
+echo "# deb http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free non-free-firmware" >> /compat/debian/etc/apt/sources.list
+echo "# deb-src http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free non-free-firmware" >> /compat/debian/etc/apt/sources.list
 
 
-echo "remove rsyslog and install nano fonts-wqy-microhei  fonts-wqy-zenhei language-pack-zh-hans and wget"
-chroot ${rootdir} /bin/bash -c "apt remove rsyslog && apt update && apt upgrade && apt install nano wget fonts-wqy-microhei  fonts-wqy-zenhei language-pack-zh-hans"
+echo "remove rsyslog and install nano fonts-wqy-microhei  fonts-wqy-zenhei and wget"
+chroot ${rootdir} /bin/bash -c " apt update && apt upgrade && apt install nano wget fonts-wqy-microhei  fonts-wqy-zenhei"
 echo "Now you can run '#chroot /compat/debian/ /bin/bash' Into debian"
