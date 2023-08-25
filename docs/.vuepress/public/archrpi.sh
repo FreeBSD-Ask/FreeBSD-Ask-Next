@@ -122,7 +122,7 @@ case $answer in
  		rm  ${rootdir}/etc/resolv.conf
 		echo "nameserver 223.5.5.5" >> ${rootdir}/etc/resolv.conf
 		chroot ${rootdir} /bin/bash -c "pacman-key --init"
-		chroot ${rootdir} /bin/bash -c "pacman-key --populate archlinux"
+		chroot ${rootdir} /bin/bash -c "pacman-key --populate archlinuxarm"
 
 
 		echo 'Server = https://mirrors.ustc.edu.cn/archlinuxarm/$arch/$repo' > ${rootdir}/etc/pacman.d/mirrorlist
