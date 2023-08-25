@@ -57,6 +57,7 @@ service dbus start
 echo "now we will bootstrap archlinux"
 
 fetch ${url}
+mkdir -p ${rootdir}
 tar xpvf ArchLinuxARM-rpi-aarch64-latest.tar.gz -C ${rootdir} --numeric-owner
 rm ArchLinuxARM-rpi-aarch64-latest.tar.gz
 
