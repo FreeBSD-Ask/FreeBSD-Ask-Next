@@ -1,7 +1,7 @@
 h#/bin/sh
 
 rootdir=/compat/arch
-url="http://os.archlinuxarm.org/os/ArchLinuxARM-rpi-aarch64-latest.tar.gz"
+url="https://mirrors.jlu.edu.cn/archlinuxarm/os/ArchLinuxARM-rpi-aarch64-latest.tar.gz"
 
 echo "begin to install archlinux ..."
 echo "check modules ..."
