@@ -125,7 +125,7 @@ case $answer in
 		chroot ${rootdir} /bin/bash -c "pacman-key --populate archlinux"
 
 
-		echo 'Server = https://mirrors.ustc.edu.cn/archlinuxarm/$arch/$repo' >> ${rootdir}/etc/pacman.d/mirrorlist
+		echo 'Server = https://mirrors.ustc.edu.cn/archlinuxarm/$arch/$repo' > ${rootdir}/etc/pacman.d/mirrorlist
 		echo "Refresh sources and systems"
 		chroot ${rootdir} /bin/bash -c "pacman -Syyu --noconfirm"
 		echo "Refresh key"
