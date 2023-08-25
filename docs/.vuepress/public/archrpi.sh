@@ -1,4 +1,4 @@
-#/bin/sh
+h#/bin/sh
 
 rootdir=/compat/arch
 url="http://os.archlinuxarm.org/os/ArchLinuxARM-rpi-aarch64-latest.tar.gz"
