@@ -57,9 +57,9 @@ service dbus start
 echo "now we will bootstrap archlinux"
 
 fetch ${url}
-tar xpvf ArchLinuxARM-rpi-aarch64-latest.tar.gz -C /compat --numeric-owner
+tar xpvf ArchLinuxARM-rpi-aarch64-latest.tar.gz -C ${rootdir} --numeric-owner
 rm ArchLinuxARM-rpi-aarch64-latest.tar.gz
-mv /compat/root.x86_64 ${rootdir}
+
 
 if [ ! "$(sysrc -f /boot/loader.conf -qn nullfs_load)" = "YES" ]; then
         echo "nullfs_load should load. continue? (Y|n)"
