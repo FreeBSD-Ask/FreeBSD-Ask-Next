@@ -127,7 +127,7 @@ case $answer in
 	
 		echo 'Server = https://mirrors.ustc.edu.cn/archlinuxarm/$arch/$repo' > ${rootdir}/etc/pacman.d/mirrorlist
   		echo '[archlinuxcn]' > /etc/pacman.conf
-  		echo 'Server = https://repo.archlinuxcn.org/$arch' >> /etc/pacman.conf
+  		echo 'Server = https://mirror.sjtu.edu.cn/archlinux-cn/aarch64' >> /etc/pacman.conf
 		echo "Refresh sources and systems"
 		chroot ${rootdir} /bin/bash -c "pacman -Syyu --noconfirm"
 		echo "Refresh key"
