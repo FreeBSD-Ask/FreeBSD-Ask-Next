@@ -119,7 +119,7 @@ case $answer in
 		exit 0
 		;;
 	[Yy][Ee][Ss]|[Yy]|"")
- 		mkdir -p  ${rootdir}/etc/resolv.conf
+ 		rm  ${rootdir}/etc/resolv.conf
 		echo "nameserver 223.5.5.5" >> ${rootdir}/etc/resolv.conf
 		chroot ${rootdir} /bin/bash -c "pacman-key --init"
 		chroot ${rootdir} /bin/bash -c "pacman-key --populate archlinux"
