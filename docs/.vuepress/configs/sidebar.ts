@@ -93,6 +93,7 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-4-zhang-zhuo-mian-an-zhuang/di-4.9-jie-zhu-ti-yu-mei-hua.md',
 		'/di-4-zhang-zhuo-mian-an-zhuang/di-4.10-jie-yuan-cheng-zhuo-mian-guan-li.md',
 		'/di-4-zhang-zhuo-mian-an-zhuang/di-4.11-jie-an-zhuang-wayland-ke-xuan.md',
+	    	'/di-4-zhang-zhuo-mian-an-zhuang/di-4.12-jie-an-zhuang-pantheon.md',
     ],
   },
   {
