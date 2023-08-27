@@ -1,7 +1,7 @@
 #/bin/sh
 
 rootdir=/compat/debian
-baseurl="https://mirrors.ustc.edu.cn/debian/"
+baseurl="https://mirrors.tuna.tsinghua.edu.cn/debian/"
 codename=bookworm
 
 echo "begin to install Debian 12 AKA bookworm ..."
