@@ -48,7 +48,7 @@ if [ "$(sysrc -n dbus_enable)" = "NO" ]; then
                         exit 2
                         ;;
             *)
-                        sysrc -i dbus_enable=YES
+                        sysrc  dbus_enable=YES
                         ;;
         esac
 fi
