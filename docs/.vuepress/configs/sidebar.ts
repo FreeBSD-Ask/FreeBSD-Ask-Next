@@ -52,8 +52,8 @@ export const sideBarConfig: SidebarConfig = [
     children: [
 		'/di-2-zhang-an-zhuang-freebsd/di-2.0-jie-tu-jie-an-zhuang.md',
 		'/di-2-zhang-an-zhuang-freebsd/di-2.1-jie-san-zhong-xu-ni-ji-yu-freebsd-ban-ben-bi-jiao.md',
-		'/di-2-zhang-an-zhuang-freebsd/di-2.2-jie-freebsd-13.0-an-zhuang-ji-yu-virtual-box.md',
-		'/di-2-zhang-an-zhuang-freebsd/di-2.3-jie-freebsd-13.0-an-zhuang-ji-yu-vmware-workstation-pro.md',
+		'/di-2-zhang-an-zhuang-freebsd/di-2.2-jie-an-zhuang-freebsd-ji-yu-virtual-box.md',
+		'/di-2-zhang-an-zhuang-freebsd/di-2.3-jie-an-zhuang-freebsd-ji-yu-vmware-workstation-pro.md',
 		'/di-2-zhang-an-zhuang-freebsd/di-2.4-jie-teng-xun-yun-qing-liang-yun-ji-qi-ta-fu-wu-qi-dd-an-zhuang-freebsd.md',
 		'/di-2-zhang-an-zhuang-freebsd/di-2.5-jie-ru-he-zai-zi-ji-de-ji-qi-shang-an-zhuang-freebsd.md',
 		'/di-2-zhang-an-zhuang-freebsd/di-2.6-jie-shou-dong-an-zhuang-freebsd.md',
