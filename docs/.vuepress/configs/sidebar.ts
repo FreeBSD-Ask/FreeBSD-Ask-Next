@@ -393,6 +393,7 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-29-zhang-zhuo-mian-gao-ji-jin-jie/di-29.2-jie-an-zhuang-cde.md',
 		'/di-29-zhang-zhuo-mian-gao-ji-jin-jie/di-29.3-jie-an-zhuang-awesome.md',
 		'/di-29-zhang-zhuo-mian-gao-ji-jin-jie/di-29.4-jie-an-zhuang-fvwm.md',
+	    	'/di-29-zhang-zhuo-mian-gao-ji-jin-jie/di-29.5-jie-an-zhuang-hyprland.md',
     ],
   },
     {
