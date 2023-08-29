@@ -16,23 +16,6 @@ export const sideBarConfig: SidebarConfig = [
     children: ['/SUMMARY.md'],
   },
   {
-    text: '第 0 章 FreeBSD 中文社区',
-    children: [
-		'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.0-jie-she-qu-tong-zhi-gun-dong-geng-xin.md',	
-	  	'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.1-jie-freebsd-faq.md',
-		'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.2-jie-freebsd-zhong-wen-she-qu-fa-zhan-gui-hua.md',
-		'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.3-jie-freebsd-de-bu-zu-zhi-chu.md',
-		'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.4-jie-freebsd-fa-hang-shuo-ming.md',
-	    	'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.5-jie-freebsd-ji-du-bao-gao.md',
-	    	'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.6-jie-freebsd-kai-fa-ji-hua.md',
-	    	'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.7-jie-freebsd-an-quan-gong-gao.md',
-	    	'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.8-jie-freebsd-zi-xiang-mu.md',
-	    	'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.9-jie-shui-zai-shi-yong-freebsd.md',
-	    	'/di-0-zhang-freebsd-zhong-wen-she-qu/di-0.10-jie-freebsd-zhong-wen-she-qu-wen-zhang-fan-yi-biao.md',
-	    
-    ],
-  },
-  {
     text: '第 1 章 走近 FreeBSD',
     children: [
 		'/di-1-zhang-zou-jin-freebsd/di-1.1-jie-shi-mo-shi-unix.md',
@@ -43,8 +26,15 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-1-zhang-zou-jin-freebsd/di-1.6-jie-unix-zhe-xue.md',
 		'/di-1-zhang-zou-jin-freebsd/di-1.7-jie-qi-ta-bsd-jian-jie.md',
 		'/di-1-zhang-zou-jin-freebsd/di-1.8-jie-linux-yong-hu-qian-yi-zhi-bei.md',
-		'/di-1-zhang-zou-jin-freebsd/di-1.9-jie-can-kao-zi-liao-yu-gong-xian-zhe-ming-dan.md',
-		'/di-1-zhang-zou-jin-freebsd/di-1.10-jie-bian-zhuan-shuo-ming.md',
+		'/di-1-zhang-zou-jin-freebsd/di-1-zhang-zou-jin-freebsd/di-1.9-jie-shui-zai-shi-yong-freebsd.md',
+		'/di-1-zhang-zou-jin-freebsd/di-1.10-jie-freebsd-de-bu-zu-zhi-chu.md',
+	    	'/di-1-zhang-zou-jin-freebsd/di-1.11-jie-freebsd-zi-xiang-mu.md',
+	    	'/di-1-zhang-zou-jin-freebsd/di-1.12-jie-freebsd-fa-hang-shuo-ming.md',
+	    	'/di-1-zhang-zou-jin-freebsd/di-1.13-jie-freebsd-ji-du-bao-gao.md',
+	    	'/di-1-zhang-zou-jin-freebsd/di-1.14-jie-freebsd-an-quan-gong-gao.md',
+	    	'/di-1-zhang-zou-jin-freebsd/di-1.15-jie-freebsd-kai-fa-ji-hua.md',
+	    	'/di-1-zhang-zou-jin-freebsd/di-1.16-jie-bian-zhuan-shuo-ming.md',
+	    	'/di-1-zhang-zou-jin-freebsd/di-1.17-jie-can-kao-zi-liao-yu-gong-xian-zhe-ming-dan.md',
     ],
   },
   {
