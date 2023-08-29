@@ -26,7 +26,7 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-1-zhang-zou-jin-freebsd/di-1.6-jie-unix-zhe-xue.md',
 		'/di-1-zhang-zou-jin-freebsd/di-1.7-jie-qi-ta-bsd-jian-jie.md',
 		'/di-1-zhang-zou-jin-freebsd/di-1.8-jie-linux-yong-hu-qian-yi-zhi-bei.md',
-		'/di-1-zhang-zou-jin-freebsd/di-1-zhang-zou-jin-freebsd/di-1.9-jie-shui-zai-shi-yong-freebsd.md',
+		'/di-1-zhang-zou-jin-freebsd/di-1.9-jie-shui-zai-shi-yong-freebsd.md',
 		'/di-1-zhang-zou-jin-freebsd/di-1.10-jie-freebsd-de-bu-zu-zhi-chu.md',
 	    	'/di-1-zhang-zou-jin-freebsd/di-1.11-jie-freebsd-zi-xiang-mu.md',
 	    	'/di-1-zhang-zou-jin-freebsd/di-1.12-jie-freebsd-fa-hang-shuo-ming.md',
