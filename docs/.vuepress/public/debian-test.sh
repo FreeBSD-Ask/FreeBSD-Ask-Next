@@ -91,7 +91,7 @@ if ! kldstat -n nullfs >/dev/null 2>&1;then
 fi
 
 echo "mount some fs for linux"
-echo "devfs ${rootdir}/dev devfs rw,late 0 0" >> /etc/fstab
+#echo "devfs ${rootdir}/dev devfs rw,late 0 0" >> /etc/fstab
 echo "tmpfs ${rootdir}/dev/shm tmpfs rw,late,size=1g,mode=1777 0 0" >> /etc/fstab
 echo "fdescfs ${rootdir}/dev/fd fdescfs rw,late,linrdlnk 0 0" >> /etc/fstab
 echo "linprocfs ${rootdir}/proc linprocfs rw,late 0 0" >> /etc/fstab
