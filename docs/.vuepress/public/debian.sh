@@ -99,7 +99,7 @@ echo "fdescfs ${rootdir}/dev/fd fdescfs rw,late,linrdlnk 0 0" >> /etc/fstab
 echo "linprocfs ${rootdir}/proc linprocfs rw,late 0 0" >> /etc/fstab
 echo "linsysfs ${rootdir}/sys linsysfs rw,late 0 0" >> /etc/fstab
 echo "/tmp ${rootdir}/tmp nullfs rw,late 0 0" >> /etc/fstab
-echo "/home ${rootdir}/home nullfs rw,late 0 0" >> /etc/fstab
+#echo "/home ${rootdir}/home nullfs rw,late 0 0" >> /etc/fstab
 mount -al
 
 echo "NOW I will should change 'compat.linux.osrelease'. continue? (Y|n)"
