@@ -401,8 +401,7 @@ export const sideBarConfig: SidebarConfig = [
 	    	'/di-30-zhang-linux-jian-rong-ceng/di-30.10-jie-android-jian-rong-ceng.md',
 	    	'/di-30-zhang-linux-jian-rong-ceng/di-30.11-jie-linux-jian-rong-ceng-ji-yu-deepin.md',
 	    	'/di-30-zhang-linux-jian-rong-ceng/di-30.12-jie-gao-ji-jiao-cheng-linux-jian-rong-ceng-yu-jail.md',
-	    	'/di-30-zhang-linux-jian-rong-ceng/di-30.13-jie-linux-jian-rong-ceng-yu-ying-yong.md',
-	    	'/di-30-zhang-linux-jian-rong-ceng/di-30.14-jie-linux-jian-rong-ceng-gu-zhang-pai-chu.md',
+	    	'/di-30-zhang-linux-jian-rong-ceng/di-30.13-jie-linux-jian-rong-ceng-gu-zhang-pai-chu-yu-pei-zhi.md',
     ],
   },
  {
