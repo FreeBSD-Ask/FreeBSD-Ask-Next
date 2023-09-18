@@ -250,6 +250,7 @@ export const sideBarConfig: SidebarConfig = [
 		'/di-18-zhang-shu-mei-pai-yu-qian-ru-shi/di-18.4-jie-usb-wang-ka-yu-wifi.md',
 		'/di-18-zhang-shu-mei-pai-yu-qian-ru-shi/di-18.5-jie-shu-mei-pai-yu-linux-jian-rong-ceng.md',
 	    	'/di-18-zhang-shu-mei-pai-yu-qian-ru-shi/di-18.6-jie-riscv.md',
+	    	'/di-18-zhang-shu-mei-pai-yu-qian-ru-shi/di-18.7-jie-shu-mei-pai-yu-openbsd.md',
     ],
   },
   {
